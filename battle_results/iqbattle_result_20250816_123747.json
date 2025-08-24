@@ -1,0 +1,67 @@
+{
+  "battle_document": "battle_document_20250816_123738.pdf",
+  "deployment_timestamp": "2025-08-16T12:37:47.521559",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "Binary Strike": 5,
+      "MCQ Assault": 1,
+      "Stealth Mission": 1,
+      "Intelligence Report": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "Binary Strike",
+        "question": "Is schedule S: r1(x) r1(y) w2(x) w1(x) r2(y) conflict-serializable?",
+        "explanation": "Construct the precedence graph.  T1->T2 (w2(x) before w1(x)), T1->T2 (r1(y) before w2(x) and r1(y) before r2(y)).  No cycles, therefore it is conflict-serializable."
+      },
+      {
+        "type": "Binary Strike",
+        "question": "Is schedule S1: r1(x) r3(y) w1(x) w2(y) r3(x) w2(x) conflict-serializable?",
+        "explanation": "Precedence graph: T1->T2 (w1(x) before w2(x)), T1->T3 (r1(x) before r3(x)). T2->T3 (w2(y) before r3(x)). T3->T2 (r3(x) before w2(x)). Cycle exists (T2->T3->T2), therefore it is not conflict-serializable."
+      },
+      {
+        "type": "MCQ Assault",
+        "question": "Is schedule S: R1(A), R2(A), R1(B), R2(B), R3(B), W1(A), W2(B) conflict-serializable?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "answer": "Yes",
+        "explanation": "The precedence graph shows no cycles.  T1 -> T1 and T2 -> T2 are not conflicts and don't form cycles. "
+      },
+      {
+        "type": "Stealth Mission",
+        "question": "Fill in the blank: A schedule is conflict-serializable if its precedence graph has ____.",
+        "answer": "no cycles",
+        "explanation": "This is a fundamental definition of conflict serializability."
+      },
+      {
+        "type": "Binary Strike",
+        "question": "Are schedules S1: R1(A),W1(A), R2(A),W2(A), R1(B),W1(B),R2(B),W2(B) and S2: R1(A),W1(A),R1(B),W1(B),R2(A),W2(A),R2(B),W2(B) view equivalent?",
+        "explanation": "No. View equivalence considers the final state of the database. While both schedules result in the same final state for the given transactions, they are not view equivalent because they produce different intermediate states, thus having differing reads in the schedules"
+      },
+      {
+        "type": "Binary Strike",
+        "question": "Is schedule S2: r1(x), r2(x), r2(y), w2(y), r1(y), w1(x) conflict-serializable?",
+        "explanation": "Precedence graph: T2 -> T1 (r2(y) before w1(x)). T1 -> T2 (r1(x) before r2(x) and w1(x) before r2(x)). Cycle T1->T2->T1; therefore, not conflict-serializable."
+      },
+      {
+        "type": "Binary Strike",
+        "question": "Is schedule S1: r1(x), r1(y), r2(x), r2(y), w2(y), w1(x) conflict-serializable?",
+        "explanation": "Precedence graph: T1 -> T2 (w1(x) before r2(x) and w1(x) before r2(y)). T2 -> T1 (w2(y) before w1(x)). Cycle T1 -> T2 -> T1; therefore not conflict-serializable."
+      },
+      {
+        "type": "Intelligence Report",
+        "question": "Explain the difference between conflict serializability and view serializability.",
+        "explanation": "Conflict serializability checks for cycles in the precedence graph based on conflicting operations. View serializability checks if a schedule is equivalent to some serial schedule based on the final state of the database, regardless of intermediate states.  A schedule can be view serializable but not conflict serializable."
+      }
+    ]
+  }
+}

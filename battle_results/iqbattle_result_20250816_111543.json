@@ -1,0 +1,82 @@
+{
+  "battle_document": "battle_document_20250816_111532.pdf",
+  "deployment_timestamp": "2025-08-16T11:15:43.172730",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "stealth": 1,
+      "intelligence": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "Because is a subordinating conjunction, not a coordinating conjunction.  Coordinating conjunctions connect elements of equal grammatical rank; subordinating conjunctions introduce dependent clauses."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While a comma is usually required, it can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "stealth",
+        "question": "Construct a sentence using the correlative conjunction 'both...and' to connect two phrases.",
+        "answer": "Examples include: Both the teacher and the student understood the rules; Both her grammar and punctuation improved.",
+        "explanation": "This question tests the understanding of how correlative conjunctions are used in sentence construction.  The answer should show correct usage to join elements of equal rank."
+      },
+      {
+        "type": "mcq",
+        "question": "Which conjunction pair is NOT a correlative coordinating conjunction as listed in the document?",
+        "options": [
+          "both...and",
+          "neither...nor",
+          "since...then",
+          "either...or"
+        ],
+        "answer": "since...then",
+        "explanation": "While 'since...then' might appear to show a relationship, it's not listed as a correlative coordinating conjunction in the provided text."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions connect independent clauses.",
+        "answer": false,
+        "explanation": "Subordinating conjunctions connect dependent clauses to independent clauses."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions introduce a __________ clause.",
+        "answer": "dependent",
+        "explanation": "This highlights the key function of subordinating conjunctions."
+      },
+      {
+        "type": "intelligence",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing an example of each in a sentence.",
+        "answer": "Coordinating conjunctions join elements of equal grammatical rank (e.g., independent clauses, phrases, words). Example:  Mary studied hard, and she passed the test. Subordinating conjunctions join a dependent clause to an independent clause, showing the relationship between them. Example: Because she studied hard, Mary passed the test.",
+        "explanation": "This assesses a comprehensive understanding of the differences and functions of both conjunction types, demonstrating knowledge beyond simple memorization."
+      }
+    ]
+  }
+}

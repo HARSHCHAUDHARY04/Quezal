@@ -1,0 +1,79 @@
+{
+  "battle_document": "battle_document_20250816_100839.pdf",
+  "deployment_timestamp": "2025-08-16T10:08:47.096460",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "Because is a subordinating conjunction, connecting a dependent clause to an independent clause."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While generally true, commas can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their function in a sentence.",
+        "explanation": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank (e.g., 'Mary went to the store, and John stayed home'). Subordinating conjunctions join a dependent clause to an independent clause, showing the relationship between them (e.g., 'Because it was raining, Mary stayed home')."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "either...or",
+          "if...then",
+          "neither...nor"
+        ],
+        "answer": "if...then",
+        "explanation": "While 'if...then' indicates a conditional relationship, it's not considered a correlative coordinating conjunction as defined in the text."
+      },
+      {
+        "type": "true_false",
+        "question": "When joining three or more items in a series with coordinating conjunctions, a comma is always necessary before the final conjunction.",
+        "answer": false,
+        "explanation": "The comma before the final conjunction is optional in a series of three or more items."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions connect a dependent clause to an _____________ clause.",
+        "answer": "independent",
+        "explanation": "This defines the fundamental function of subordinating conjunctions."
+      },
+      {
+        "type": "essay",
+        "question": "Provide three different examples illustrating the use of commas with coordinating conjunctions in sentences using different combinations of words, phrases, and clauses.",
+        "explanation": "Answers should demonstrate correct comma usage when joining two independent clauses, and in series of words/phrases/subordinate clauses. Examples should show understanding of the rules outlined in the text, illustrating the correct and incorrect use of commas."
+      }
+    ]
+  }
+}

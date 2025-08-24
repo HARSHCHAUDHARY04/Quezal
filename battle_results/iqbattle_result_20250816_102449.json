@@ -1,0 +1,98 @@
+{
+  "battle_document": "battle_document_20250816_102442.pdf",
+  "deployment_timestamp": "2025-08-16T10:24:49.181605",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "true_false",
+    "question_formation": {
+      "true_false": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "The comma is always required before a coordinating conjunction joining two independent clauses.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The document states that the comma may be omitted if the independent clauses are very short."
+      },
+      {
+        "question": "FANBOYS is an acronym used to remember subordinating conjunctions.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "FANBOYS is an acronym for coordinating conjunctions (for, and, nor, but, or, yet, so)."
+      },
+      {
+        "question": "Correlative coordinating conjunctions always connect clauses of unequal rank.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "They connect elements of similar grammatical function, just like coordinating conjunctions, but in pairs."
+      },
+      {
+        "question": "Subordinating conjunctions connect two independent clauses.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "They connect a dependent clause to an independent clause."
+      },
+      {
+        "question": "A comma is always used before the coordinating conjunction when joining more than two words, phrases, or subordinate clauses.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The document states a comma may or may not be used before the conjunction in this case."
+      },
+      {
+        "question": "'Neither...nor' is an example of a correlative coordinating conjunction.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The document lists 'neither...nor' as a common correlative coordinating conjunction."
+      },
+      {
+        "question": "All conjunctions have inflection.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The document explicitly states that conjunctions do not have inflection."
+      },
+      {
+        "question": "Conjunctions primarily serve to connect ideas and economize sentence structure.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The document lists these as two key functions of conjunctions."
+      }
+    ]
+  }
+}

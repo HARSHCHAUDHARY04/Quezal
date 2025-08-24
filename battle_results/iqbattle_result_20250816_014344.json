@@ -1,0 +1,98 @@
+{
+  "battle_document": "battle_document_20250816_014337.pdf",
+  "deployment_timestamp": "2025-08-16T01:43:44.024060",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "true_false",
+    "question_formation": {
+      "true_false": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "The comma before a coordinating conjunction is always required when joining two independent clauses.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The provided text states a comma is required *unless* the independent clauses are very short."
+      },
+      {
+        "question": "FANBOYS is an acronym representing all subordinating conjunctions.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "FANBOYS represents coordinating conjunctions, not subordinating conjunctions."
+      },
+      {
+        "question": "Subordinating conjunctions connect clauses of equal grammatical rank.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "Subordinating conjunctions connect dependent clauses to independent clauses, not clauses of equal rank."
+      },
+      {
+        "question": "Correlative coordinating conjunctions always function as single units.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The text explicitly states they are used in pairs, one in each section being connected."
+      },
+      {
+        "question": "A comma is always necessary before a coordinating conjunction when joining three or more words.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The text says a comma is used *between* each section of the series, and it may or may not be used before the conjunction."
+      },
+      {
+        "question": "'Neither...nor' is an example of a subordinating correlative conjunction.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "It's a correlative coordinating conjunction, as indicated in the text."
+      },
+      {
+        "question": "Conjunctions always inflect to indicate grammatical function within a sentence.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "False",
+        "explanation": "The text explicitly states that conjunctions do *not* have inflection."
+      },
+      {
+        "question": "All conjunctions function to connect ideas.",
+        "type": "true_false",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct_answer": "True",
+        "explanation": "The text lists 'connect ideas' as one of the functions of conjunctions."
+      }
+    ]
+  }
+}

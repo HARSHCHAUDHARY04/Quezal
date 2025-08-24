@@ -1,0 +1,138 @@
+{
+  "battle_document": "battle_document_20250823_232915.pdf",
+  "deployment_timestamp": "2025-08-23T23:29:28.729932",
+  "battle_parameters": {
+    "num_questions": 10,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 10
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a valid Java primitive data type?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) float",
+          "C) String",
+          "D) boolean"
+        ],
+        "correct_answer": "C",
+        "explanation": "String is a class in Java, not a primitive data type.  Primitives are byte, short, int, long, float, double, char, and boolean."
+      },
+      {
+        "question": "What is the purpose of the `main` method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To define classes",
+          "B) To handle user input",
+          "C) To be the entry point of execution",
+          "D) To perform calculations"
+        ],
+        "correct_answer": "C",
+        "explanation": "The `main` method is where the Java Virtual Machine (JVM) begins executing a program."
+      },
+      {
+        "question": "What is the purpose of comments in Java code?",
+        "type": "mcq",
+        "options": [
+          "A) To improve program execution speed",
+          "B) To provide explanations and documentation for the code",
+          "C) To define variables",
+          "D) To declare methods"
+        ],
+        "correct_answer": "B",
+        "explanation": "Comments are used to enhance code readability and understanding for developers."
+      },
+      {
+        "question": "Which keyword is used to declare a constant variable in Java?",
+        "type": "mcq",
+        "options": [
+          "A) static",
+          "B) final",
+          "C) const",
+          "D) volatile"
+        ],
+        "correct_answer": "B",
+        "explanation": "The `final` keyword prevents modification of a variable's value after initialization."
+      },
+      {
+        "question": "What does `javac Hello.java` do?",
+        "type": "mcq",
+        "options": [
+          "A) Executes the Hello program",
+          "B) Compiles the Hello.java source code into bytecode",
+          "C) Interprets the Hello.class file",
+          "D) Deletes the Hello.java file"
+        ],
+        "correct_answer": "B",
+        "explanation": "This command uses the Java compiler to translate the source code into bytecode, which the JVM can understand."
+      },
+      {
+        "question": "What is the correct way to declare an integer variable named `age` and assign it the value 25?",
+        "type": "mcq",
+        "options": [
+          "A) int age = \"25\";",
+          "B) int age: 25;",
+          "C) int age = 25;",
+          "D) int 25 = age;"
+        ],
+        "correct_answer": "C",
+        "explanation": "This demonstrates the correct syntax for variable declaration and assignment in Java."
+      },
+      {
+        "question": "Which access modifier provides the most restricted access to a class member?",
+        "type": "mcq",
+        "options": [
+          "A) public",
+          "B) protected",
+          "C) private",
+          "D) default"
+        ],
+        "correct_answer": "C",
+        "explanation": "Private members are only accessible within the same class."
+      },
+      {
+        "question": "What is the purpose of `import java.util.*;` in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To create a new class",
+          "B) To import all classes from the `java.util` package",
+          "C) To define a method",
+          "D) To compile the program"
+        ],
+        "correct_answer": "B",
+        "explanation": "This line imports all classes from the `java.util` package, providing access to utility classes like `Date`."
+      },
+      {
+        "question": "What will the following code snippet print? \n `System.out.println(10 + 5 + \"hello\");`",
+        "type": "mcq",
+        "options": [
+          "A) 15hello",
+          "B) 105hello",
+          "C) An error",
+          "D) hello15"
+        ],
+        "correct_answer": "A",
+        "explanation": "Java will perform the addition first (10 + 5 = 15), then concatenate the result with the string \"hello\"."
+      },
+      {
+        "question": "In the `HelloDate` example, what does `date.toString()` do?",
+        "type": "mcq",
+        "options": [
+          "A) Creates a new Date object",
+          "B) Converts the Date object to a String representation",
+          "C) Prints the current date and time to the console",
+          "D) Sets the date to a specific value"
+        ],
+        "correct_answer": "B",
+        "explanation": "The `toString()` method converts the `Date` object into a string representation of the date and time, which is then printed by `System.out.println()`."
+      }
+    ]
+  }
+}

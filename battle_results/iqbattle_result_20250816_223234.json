@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_223224.pdf",
+  "deployment_timestamp": "2025-08-16T22:32:34.997041",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "binary_strike": 2,
+      "stealth_mission": 2,
+      "intelligence_report": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "An array is declared as `int numbers[5];`.  What is the valid range of indices for accessing elements in this array?",
+        "options": [
+          "0 to 4",
+          "1 to 5",
+          "-1 to 4",
+          "-5 to 0"
+        ],
+        "answer": "0 to 4",
+        "explanation": "Array indices in C start from 0.  For an array of size 5, the valid indices are 0, 1, 2, 3, and 4."
+      },
+      {
+        "type": "binary_strike",
+        "question": "True or False:  In a single-dimensional array, all elements must be of the same data type.",
+        "answer": "true",
+        "explanation": "This is a defining characteristic of arrays in C.  All elements within a single array must share the same data type (e.g., all integers, all floats, etc.)."
+      },
+      {
+        "type": "stealth_mission",
+        "question": "If `int arr[3] = {10, 20, 30};` and the address of `arr[0]` is 1000, assuming an integer takes 4 bytes, what is the address of `arr[2]`?",
+        "answer": "1008",
+        "explanation": "Each integer occupies 4 bytes.  `arr[2]` is two elements away from `arr[0]`, so its address is 1000 + (2 * 4) = 1008."
+      },
+      {
+        "type": "intelligence_report",
+        "question": "Write a C function that takes an integer array of size 10 as input and returns the smallest element in the array.",
+        "answer": "```c\nint findSmallest(int arr[10]) {\n  int smallest = arr[0];\n  for (int i = 1; i < 10; i++) {\n    if (arr[i] < smallest) {\n      smallest = arr[i];\n    }\n  }\n  return smallest;\n}\n```",
+        "explanation": "The function iterates through the array, comparing each element to the current smallest. If a smaller element is found, it updates `smallest`."
+      },
+      {
+        "type": "mcq",
+        "question": "Which of the following code snippets correctly calculates the average of 10 integers stored in an array named `numbers`?",
+        "options": [
+          "average = numbers / 10;",
+          "average = sum(numbers) / 10;",
+          "int sum = 0; for (int i = 0; i < 10; i++) sum += numbers[i]; average = sum / 10.0;",
+          "average = numbers[0] + numbers[1] + ... + numbers[9] / 10;"
+        ],
+        "answer": "int sum = 0; for (int i = 0; i < 10; i++) sum += numbers[i]; average = sum / 10.0;",
+        "explanation": "This option correctly sums all elements and then divides by 10.0 (to ensure floating-point division for a more accurate average)."
+      },
+      {
+        "type": "binary_strike",
+        "question": "True or False:  The index of the last element in an array of size N is N-1.",
+        "answer": "true",
+        "explanation": "Array indices are zero-based. The first element is at index 0, the second at index 1, and so on, with the last element at index N-1."
+      },
+      {
+        "type": "stealth_mission",
+        "question": "Write a C code snippet that prints only the even numbers from an integer array of size 5.",
+        "answer": "```c\nint arr[5];\nfor(int i=0; i<5; i++){\n  scanf(\"%d\", &arr[i]);\n}\nfor(int i=0; i<5; i++){\n  if(arr[i]%2 == 0){\n    printf(\"%d \", arr[i]);\n  }\n}\n```",
+        "explanation": "The code reads 5 integers, then iterates and checks if each number is even using the modulo operator (%)"
+      },
+      {
+        "type": "intelligence_report",
+        "question": "Write a C function that takes two integer arrays, `arr1` and `arr2`, each of size 5, and returns a new array of size 5 containing the element-wise sum of `arr1` and `arr2` (i.e.,  `result[i] = arr1[i] + arr2[i]` ).",
+        "answer": "```c\nint* elementWiseSum(int arr1[5], int arr2[5]) {\n  int* result = (int*)malloc(5 * sizeof(int));\n  for (int i = 0; i < 5; i++) {\n    result[i] = arr1[i] + arr2[i];\n  }\n  return result;\n}\n```",
+        "explanation": "The function dynamically allocates memory for the result array, calculates the element-wise sum, and returns the pointer to the new array.  Remember to free the allocated memory after use to avoid memory leaks."
+      }
+    ]
+  }
+}

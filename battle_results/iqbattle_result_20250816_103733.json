@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_103726.pdf",
+  "deployment_timestamp": "2025-08-16T10:37:33.953851",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) are the coordinating conjunctions. 'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While usually required, a comma can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The conjunctions 'both...and' are an example of _______ coordinating conjunctions.",
+        "answer": "correlative",
+        "explanation": "Correlative conjunctions work in pairs to connect elements of equal grammatical rank."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing examples of each and illustrating their function within a sentence.",
+        "answer": "Coordinating conjunctions connect words, phrases, or clauses of equal grammatical rank (e.g., independent clauses).  Examples include 'and', 'but', 'or'.  They show a relationship of equal importance between the connected elements.  Example:  'Mary went to the store, and John stayed home.'  Subordinating conjunctions connect a dependent clause to an independent clause, showing a relationship of dependence. Examples include 'because', 'although', 'since'.  The dependent clause is grammatically incomplete without the independent clause. Example: 'John stayed home because he was tired.'",
+        "explanation": "A successful answer demonstrates understanding of the grammatical functions and distinctions between coordinating and subordinating conjunctions, through clear definitions and correctly constructed examples.  It shows the difference in clause relationships."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "either...or",
+          "neither...nor",
+          "if...then",
+          "both...and"
+        ],
+        "answer": "if...then",
+        "explanation": "'If...then' is a conditional conjunction, not a correlative coordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions always introduce dependent clauses.",
+        "answer": true,
+        "explanation": "This is the defining characteristic of subordinating conjunctions."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym FANBOYS helps remember the seven ________ conjunctions.",
+        "answer": "coordinating",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "essay",
+        "question": "Describe a situation where you might use a comma before a coordinating conjunction, and another where you would not. Explain your reasoning.",
+        "answer": "A comma is used before a coordinating conjunction joining two independent clauses:  'The sun was shining, and the birds were singing.'  The clauses are independent and could stand alone as complete sentences.  A comma is not required when joining two short independent clauses, or when joining words, phrases, or dependent clauses: 'John and Mary went to the store.'  In this case, the items being joined are not independent clauses.",
+        "explanation": "A good answer will correctly identify examples demonstrating the comma rules surrounding coordinating conjunction usage.  It illustrates understanding of independent and dependent clause construction."
+      }
+    ]
+  }
+}

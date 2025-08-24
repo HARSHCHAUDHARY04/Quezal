@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_101913.pdf",
+  "deployment_timestamp": "2025-08-16T10:19:20.496706",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "but",
+          "and",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "Because is a subordinating conjunction, connecting a dependent clause to an independent clause."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is usually required, but it can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least two examples of each and illustrating their use in sentences.",
+        "answer": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank (e.g., Mary went to the store, and John stayed home.  The cake was delicious, but it was expensive.). Subordinating conjunctions join a dependent clause to an independent clause (e.g., Because it was raining, Mary stayed home.  Although John tried, he couldn't finish the task.).",
+        "explanation": "A successful answer demonstrates understanding of the grammatical function and the difference in usage between coordinating and subordinating conjunctions, illustrated with accurate examples."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "either...or",
+          "then...than",
+          "neither...nor"
+        ],
+        "answer": "then...than",
+        "explanation": "Then...than is not a correlative pair used as conjunctions; than is a conjunction, but then isn't."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions connect two independent clauses.",
+        "answer": false,
+        "explanation": "Subordinating conjunctions connect a dependent clause to an independent clause."
+      },
+      {
+        "type": "fill_blank",
+        "question": "When joining three or more items in a series, a comma is used between each item. A comma _______ be used before the coordinating conjunction.",
+        "answer": "may or may not",
+        "explanation": "The document explicitly states that a comma may or may not be used before the conjunction in this case."
+      },
+      {
+        "type": "essay",
+        "question": "Provide an example sentence using a subordinating conjunction to illustrate the relationship between two clauses.  Then, explain how the meaning of the sentence would change if you replaced the subordinating conjunction with a coordinating conjunction.",
+        "answer": "Example using a subordinating conjunction: \"Because it was raining, the picnic was canceled.\"  Replacing 'because' with a coordinating conjunction like 'and' (e.g., \"It was raining, and the picnic was canceled.\") changes the relationship between the clauses. The original sentence implies that the rain caused the cancellation, while the revised sentence merely notes two separate events. ",
+        "explanation": "A successful answer shows understanding of how different conjunction types alter the relationship between clauses, impacting the meaning of the entire sentence. The chosen subordinating conjunction must be grammatically correct within the example sentence."
+      }
+    ]
+  }
+}

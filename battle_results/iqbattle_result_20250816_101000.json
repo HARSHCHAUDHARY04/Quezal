@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_100952.pdf",
+  "deployment_timestamp": "2025-08-16T10:10:00.570741",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "but",
+          "or",
+          "because",
+          "and"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (for, and, nor, but, or, yet, so) are the coordinating conjunctions.  'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While generally true, the document states that the comma may be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "The document explicitly mentions this acronym."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their function in a sentence.",
+        "answer_example": "Coordinating conjunctions connect elements of equal grammatical rank (words, phrases, or independent clauses). Example:  'Mary went to the store, and John stayed home.'  Subordinating conjunctions connect a dependent clause to an independent clause, showing the relationship between them. Example: 'Because it was raining, Mary stayed home.'",
+        "explanation": "This tests understanding beyond simple memorization; it demands comprehension of the grammatical roles and functions of each conjunction type."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "either...or",
+          "since...then",
+          "neither...nor"
+        ],
+        "answer": "since...then",
+        "explanation": "'Since' is a subordinating conjunction, not a correlative coordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "When joining more than two words with a coordinating conjunction, a comma is always necessary before the conjunction.",
+        "answer": false,
+        "explanation": "The document states that a comma *may or may not* be used before the conjunction in such cases."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions connect a dependent clause to an _______________ clause.",
+        "answer": "independent",
+        "explanation": "This directly tests the definition provided in the document."
+      },
+      {
+        "type": "essay",
+        "question": "Provide three examples of sentences using different types of conjunctions (coordinating, correlative coordinating, and subordinating) and briefly explain the function of each conjunction in your chosen sentences.",
+        "answer_example": "1. Coordinating: 'The sun was shining, and the birds were singing.' ('and' connects two independent clauses). 2. Correlative Coordinating: 'Not only did she study hard, but also she sought help from the Writing Center.' ('Not only...but also' connects two parallel clauses). 3. Subordinating: 'Although it was late, she continued writing.' ('Although' introduces a dependent clause modifying the main clause).",
+        "explanation": "Tests application of the knowledge by creating original examples and explaining grammatical roles.  It avoids pure recall."
+      }
+    ]
+  }
+}

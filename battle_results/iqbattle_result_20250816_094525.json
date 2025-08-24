@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_094519.pdf",
+  "deployment_timestamp": "2025-08-16T09:45:25.943578",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (for, and, nor, but, or, yet, so) are the coordinating conjunctions.  'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is generally required, but can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The conjunctions 'both...and' are an example of _______________ coordinating conjunctions.",
+        "answer": "correlative",
+        "explanation": "Correlative conjunctions work in pairs to connect elements of equal grammatical rank."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their function within a sentence.",
+        "answer": "Coordinating conjunctions join elements of equal grammatical rank (words, phrases, or independent clauses). Example: 'Mary went to the store, and John stayed home.'  Subordinating conjunctions join a dependent clause to an independent clause, showing a relationship between them. Example: 'Because it was raining, Mary stayed home.'",
+        "explanation": "The answer should clearly demonstrate understanding of the distinct roles of each type of conjunction."
+      },
+      {
+        "type": "mcq",
+        "question": "Which correlative conjunction pair correctly completes the sentence:  _____  it rained, _____ we went for a walk.",
+        "options": [
+          "Although...yet",
+          "Despite...still",
+          "Because...therefore",
+          "Either...or"
+        ],
+        "answer": "Although...yet",
+        "explanation": "Although introduces a dependent clause expressing contrast, and 'yet' shows contrast within the independent clause."
+      },
+      {
+        "type": "true_false",
+        "question": "When using a coordinating conjunction to join more than two items in a series, commas are unnecessary.",
+        "answer": false,
+        "explanation": "Commas are used between each item in a series, and a comma may or may not precede the final coordinating conjunction."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions introduce _____________ clauses.",
+        "answer": "dependent",
+        "explanation": "Dependent clauses cannot stand alone as complete sentences."
+      },
+      {
+        "type": "essay",
+        "question": "Provide a sentence using a subordinating conjunction that demonstrates a causal relationship between two clauses.",
+        "answer": "Since it was a beautiful day, we decided to have a picnic.",
+        "explanation": "The answer should use a subordinating conjunction that clearly establishes cause and effect.  Many correct answers exist."
+      }
+    ]
+  }
+}

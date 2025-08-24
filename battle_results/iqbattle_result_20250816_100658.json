@@ -1,0 +1,86 @@
+{
+  "battle_document": "battle_document_20250816_100651.pdf",
+  "deployment_timestamp": "2025-08-16T10:06:58.150370",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "stealth": 1,
+      "intelligence": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "for",
+          "and",
+          "nor",
+          "because",
+          "but",
+          "or",
+          "yet",
+          "so"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) are the coordinating conjunctions.  'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is usually required, but it can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS is a mnemonic device for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "stealth",
+        "question": "Identify the correlative conjunction in the sentence: 'Not only did she study hard, but also she sought help from the Writing Center'.",
+        "answer": "Not only...but also",
+        "explanation": "Correlative conjunctions work in pairs.  'Not only...but also' is a common example."
+      },
+      {
+        "type": "mcq",
+        "question": "Which type of conjunction connects a dependent clause to an independent clause?",
+        "options": [
+          "Coordinating",
+          "Correlative Coordinating",
+          "Subordinating",
+          "Adverbial"
+        ],
+        "answer": "Subordinating",
+        "explanation": "Subordinating conjunctions introduce dependent clauses and show their relationship to independent clauses."
+      },
+      {
+        "type": "true_false",
+        "question": "'As...as' is an example of a correlative coordinating conjunction.",
+        "answer": true,
+        "explanation": "The document lists 'as...as' as a common correlative coordinating conjunction."
+      },
+      {
+        "type": "fill_blank",
+        "question": "When joining more than two words or phrases with a coordinating conjunction, a comma should be used ________ each section of the series.",
+        "answer": "between",
+        "explanation": "The document specifies the use of commas between sections of a series when using coordinating conjunctions."
+      },
+      {
+        "type": "intelligence",
+        "question": "Explain the difference in punctuation when using coordinating conjunctions to join two independent clauses versus two words or phrases.",
+        "answer": "When joining two independent clauses, a comma is typically placed before the coordinating conjunction. When joining two words or phrases, no comma is used.",
+        "explanation": "The document clearly outlines this difference in punctuation rules."
+      }
+    ]
+  }
+}

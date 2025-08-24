@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_152713.pdf",
+  "deployment_timestamp": "2025-08-16T15:27:20.289073",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "but",
+          "or",
+          "since",
+          "and"
+        ],
+        "answer": "since",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) are the coordinating conjunctions.  'Since' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While generally true, a comma may be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The conjunctions 'both...and' are an example of _______________ conjunctions.",
+        "answer": "correlative coordinating",
+        "explanation": "These conjunctions work in pairs to connect elements of equal grammatical rank."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their function in a sentence.",
+        "answer": "Coordinating conjunctions join elements of equal grammatical rank (words, phrases, clauses). Example:  'Mary went to the store, and John stayed home.'  Subordinating conjunctions join a dependent clause to an independent clause, showing the relationship between them. Example: 'Because it was raining, Mary stayed home.' The coordinating conjunction 'and' simply links two independent clauses; the subordinating conjunction 'because' shows the cause-effect relationship between the clauses.",
+        "explanation": "A successful answer will accurately define both types, offer clear examples and explain how each conjunction functions within its respective sentence."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "either...or",
+          "neither...nor",
+          "then...because",
+          "both...and"
+        ],
+        "answer": "then...because",
+        "explanation": "'Then...because' doesn't function as a correlative pair.  Correlative conjunctions appear in pairs to connect elements equally."
+      },
+      {
+        "type": "true_false",
+        "question": "When using coordinating conjunctions to join more than two words in a series, commas are optional between each item in the series.",
+        "answer": false,
+        "explanation": "Commas are required between each item in a series of three or more words, phrases, or clauses, although the comma before the final conjunction is sometimes omitted."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions connect a dependent clause to an _______________ clause.",
+        "answer": "independent",
+        "explanation": "This is the core function of subordinating conjunctions \u2013 creating a relationship between a dependent and an independent clause."
+      },
+      {
+        "type": "essay",
+        "question": "Provide a sentence using a subordinating conjunction that shows a contrast between two actions.  Explain how the conjunction creates this contrast.",
+        "answer": "Although the sun was shining, Mary decided to stay inside. The subordinating conjunction 'although' introduces a dependent clause that contradicts the expectation created by the main clause. It shows the unexpected action of Mary staying inside despite the sunshine.",
+        "explanation": "The answer should demonstrate understanding of the contrastive function of subordinating conjunctions."
+      }
+    ]
+  }
+}

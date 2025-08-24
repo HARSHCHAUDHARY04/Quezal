@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_020152.pdf",
+  "deployment_timestamp": "2025-08-16T02:01:59.895009",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "Because is a subordinating conjunction, connecting a dependent clause to an independent clause."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is usually required, but it can be omitted if the clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym ______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their different functions in a sentence.",
+        "answer": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank. Example:  Mary went to the store, and John stayed home.  Subordinating conjunctions join a dependent clause to an independent clause, showing a relationship between the two. Example:  Because it was raining, Mary stayed home.  The coordinating conjunction 'and' simply connects two independent actions.  The subordinating conjunction 'because' shows the reason for Mary's action; the dependent clause explains the independent clause.",
+        "explanation": "This answer demonstrates understanding of the distinct roles of each type of conjunction and the ability to analyze sentence structure."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "either...or",
+          "if...then",
+          "neither...nor"
+        ],
+        "answer": "if...then",
+        "explanation": "'If...then' is a conditional conjunction, not a correlative coordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions introduce independent clauses.",
+        "answer": false,
+        "explanation": "Subordinating conjunctions introduce dependent clauses."
+      },
+      {
+        "type": "fill_blank",
+        "question": "When joining more than two words or phrases with a coordinating conjunction, a comma is placed between each item in the series, except before the final item. A comma ________ be used before the final coordinating conjunction.",
+        "answer": "may or may not",
+        "explanation": "The document indicates that the comma is optional before the final conjunction."
+      },
+      {
+        "type": "essay",
+        "question": "Describe a situation where using a correlative conjunction would improve the clarity and flow of a sentence.  Provide an example of such a sentence.",
+        "answer": "Correlative conjunctions improve sentence flow by creating a parallel structure, emphasizing the relationship between paired elements. For instance, saying 'Not only did she study hard, but also she sought help from the writing center' is clearer than  'She studied hard, and she sought help from the writing center'. The correlative conjunction highlights the parallel efforts towards success, creating a more emphatic and structured sentence.",
+        "explanation": "This answer shows understanding of correlative conjunctions and their ability to enhance sentence structure and emphasis."
+      }
+    ]
+  }
+}

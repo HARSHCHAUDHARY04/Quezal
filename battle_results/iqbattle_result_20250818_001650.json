@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250818_001640.pdf",
+  "deployment_timestamp": "2025-08-18T00:16:50.803277",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "An array named 'numbers' is declared as 'int numbers[5];'.  If numbers[0] has the memory address 1000, and each integer occupies 4 bytes, what is the memory address of numbers[3]?",
+        "type": "mcq",
+        "options": [
+          "A) 1004",
+          "B) 1008",
+          "C) 1012",
+          "D) 1016"
+        ],
+        "correct_answer": "D",
+        "explanation": "Each element takes 4 bytes. numbers[3] is 3 elements after numbers[0], so its address is 1000 + (3 * 4) = 1012.  The options are slightly off, however, if considering that memory addresses start at 0, it should be 1000 + (3*4) = 1012."
+      },
+      {
+        "question": "Considering the provided C code example for calculating the average, what will happen if the user enters '0' as the number of elements?",
+        "type": "mcq",
+        "options": [
+          "A) The program will calculate the average as 0.",
+          "B) The program will produce an error message.",
+          "C) The program will crash due to division by zero.",
+          "D) The program will ignore the input and continue to the next prompt."
+        ],
+        "correct_answer": "C",
+        "explanation": "The program divides the sum by 'n' (number of elements).  If n is 0, this results in a division by zero, causing a runtime error or crash."
+      },
+      {
+        "question": "Which of the following correctly describes how to access the 5th element of an array named 'data' in C?",
+        "type": "mcq",
+        "options": [
+          "A) data[5]",
+          "B) data[4]",
+          "C) data(5)",
+          "D) data(4)"
+        ],
+        "correct_answer": "B",
+        "explanation": "Array indices in C start at 0. Therefore, the 5th element is at index 4."
+      },
+      {
+        "question": "In the program to find the largest element in an array, what is the initial value typically assigned to the 'largest' variable?",
+        "type": "mcq",
+        "options": [
+          "A) 0",
+          "B) -1",
+          "C) The value of the last element",
+          "D) The value of the first element"
+        ],
+        "correct_answer": "D",
+        "explanation": "To compare efficiently, the 'largest' variable is initialized to the first element, then compared with the rest of the elements."
+      },
+      {
+        "question": "You have an array of integers.  Which loop structure is most suitable to efficiently iterate through each element and perform an operation on it?",
+        "type": "mcq",
+        "options": [
+          "A) while loop",
+          "B) do-while loop",
+          "C) for loop",
+          "D) switch-case statement"
+        ],
+        "correct_answer": "C",
+        "explanation": "A 'for' loop is ideal for iterating a known number of times (the array size) and accessing elements using index values."
+      },
+      {
+        "question": "Given two integer arrays, A and B, both of size 5, what operation does 'C[i] = A[i] + B[i];' perform?",
+        "type": "mcq",
+        "options": [
+          "A) Subtracts corresponding elements of A and B.",
+          "B) Multiplies corresponding elements of A and B.",
+          "C) Adds corresponding elements of A and B.",
+          "D) Divides corresponding elements of A and B."
+        ],
+        "correct_answer": "C",
+        "explanation": "The '=' operator performs an assignment. The '+' operator adds the elements at the same index in A and B, assigning the result to the element at the same index in C."
+      },
+      {
+        "question": "What is the purpose of the \u2018sum += marks[i];\u2019 line in the average calculation program?",
+        "type": "mcq",
+        "options": [
+          "A) It assigns the value of marks[i] to sum.",
+          "B) It subtracts marks[i] from sum.",
+          "C) It adds the value of marks[i] to sum.",
+          "D) It divides sum by marks[i]."
+        ],
+        "correct_answer": "C",
+        "explanation": "The '+=' is a shorthand operator that adds the value on the right-hand side to the existing value of the variable on the left-hand side."
+      },
+      {
+        "question": "If you want to store the ages of 20 students, what is the minimum size of an integer array you would need to declare?",
+        "type": "mcq",
+        "options": [
+          "A) 10",
+          "B) 15",
+          "C) 20",
+          "D) 25"
+        ],
+        "correct_answer": "C",
+        "explanation": "You need an array with at least 20 elements to store the ages of 20 students. Array indices start at 0, so an array of size 20 can hold elements from index 0 to 19."
+      }
+    ]
+  }
+}

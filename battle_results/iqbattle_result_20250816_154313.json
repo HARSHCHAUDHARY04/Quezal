@@ -1,0 +1,171 @@
+{
+  "battle_document": "battle_document_20250816_154300.pdf",
+  "deployment_timestamp": "2025-08-16T15:43:13.264337",
+  "battle_parameters": {
+    "num_questions": 20,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 5,
+      "true_false": 5,
+      "fill_blank": 5,
+      "essay": 5
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "but",
+          "or",
+          "since",
+          "and"
+        ],
+        "answer": "since",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) are the coordinating conjunctions. 'Since' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is generally required, but it can be omitted if the independent clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Conjunctions connect words, phrases, or _______.",
+        "answer": "clauses",
+        "explanation": "The document explicitly states that conjunctions connect words, phrases, or clauses."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing examples of each and illustrating their use in sentences.",
+        "answer": "Coordinating conjunctions connect words, phrases, or clauses of equal grammatical rank (e.g., independent clauses). Examples include 'and', 'but', 'or'.  Subordinating conjunctions connect a dependent clause to an independent clause, showing the relationship between them.  Examples include 'because', 'although', 'since'.  Example: Coordinating -  She studied hard, and she passed the exam. Subordinating - Because she studied hard, she passed the exam.",
+        "explanation": "This question tests understanding of the core distinction between the two types of conjunctions and their application."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "neither...nor",
+          "if...then",
+          "either...or"
+        ],
+        "answer": "if...then",
+        "explanation": "If...then is a conditional conjunction, not a correlative coordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "The acronym FANBOYS helps remember subordinating conjunctions.",
+        "answer": false,
+        "explanation": "FANBOYS is for coordinating conjunctions."
+      },
+      {
+        "type": "fill_blank",
+        "question": "Subordinating conjunctions introduce ______ clauses.",
+        "answer": "dependent",
+        "explanation": "The text clearly defines the function of subordinating conjunctions."
+      },
+      {
+        "type": "essay",
+        "question": "Describe the punctuation rules when using coordinating conjunctions to join multiple words, phrases, or clauses.  Give examples.",
+        "answer": "When joining two words, phrases, or subordinate clauses, no comma is needed. When joining more than two, use a comma between each item in the series; a comma before the final conjunction is optional. Example:  She ate apples, bananas, and oranges.  She ate apples, bananas, and oranges.",
+        "explanation": "Tests the understanding of comma usage with coordinating conjunctions."
+      },
+      {
+        "type": "mcq",
+        "question": "What is the primary function of conjunctions?",
+        "options": [
+          "To modify verbs",
+          "To connect words, phrases, or clauses",
+          "To act as subjects in sentences",
+          "To introduce new paragraphs"
+        ],
+        "answer": "To connect words, phrases, or clauses",
+        "explanation": "This is stated directly in the provided text."
+      },
+      {
+        "type": "true_false",
+        "question": "Conjunctions typically have inflection.",
+        "answer": false,
+        "explanation": "The text explicitly states that conjunctions do not have inflection."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The more you write, the _______ your skills become.",
+        "answer": "better",
+        "explanation": "This tests the understanding of correlative conjunctions and their contextual use."
+      },
+      {
+        "type": "essay",
+        "question": "Explain how conjunctions contribute to sentence variety and economy.",
+        "answer": "Conjunctions allow writers to combine multiple ideas into a single sentence, creating more concise and varied sentence structures instead of using multiple short sentences. This improves readability and flow.",
+        "explanation": "Tests the understanding of conjunctions' role beyond simple sentence structure."
+      },
+      {
+        "type": "mcq",
+        "question": "Which conjunction could replace 'because' in the sentence: 'Because it was raining, we stayed inside.'?",
+        "options": [
+          "although",
+          "since",
+          "unless",
+          "however"
+        ],
+        "answer": "since",
+        "explanation": "Since is a subordinating conjunction that expresses cause and effect, similar to 'because'."
+      },
+      {
+        "type": "true_false",
+        "question": "'Neither...nor' is an example of a coordinating conjunction.",
+        "answer": true,
+        "explanation": "Specifically, it's a correlative coordinating conjunction."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The conjunction 'yet' expresses a relationship of ______.",
+        "answer": "contrast",
+        "explanation": "This tests understanding of the nuances of individual conjunctions."
+      },
+      {
+        "type": "essay",
+        "question": "Construct a sentence using at least three different types of conjunctions (coordinating, correlative, and subordinating).",
+        "answer": "Although it was late, and I was tired,  both my sister and I decided to finish our homework because we had a big test tomorrow.",
+        "explanation": "This demonstrates a comprehensive understanding of conjunctions' types and their appropriate use."
+      },
+      {
+        "type": "mcq",
+        "question": "Which conjunction best shows a choice between two options?",
+        "options": [
+          "and",
+          "but",
+          "or",
+          "so"
+        ],
+        "answer": "or",
+        "explanation": "This tests practical understanding of conjunctions' meaning and use."
+      },
+      {
+        "type": "true_false",
+        "question": "A dependent clause can stand alone as a complete sentence.",
+        "answer": false,
+        "explanation": "Dependent clauses require an independent clause to form a complete sentence."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The word 'so' can function as both a coordinating conjunction and an _______.",
+        "answer": "adverb",
+        "explanation": "This tests the understanding of words having multiple grammatical functions."
+      },
+      {
+        "type": "essay",
+        "question": "Provide three different sentences demonstrating the use of 'as...as' as a correlative conjunction in different contexts.",
+        "answer": "1.  He's as tall as his father. 2. The assignment was as challenging as it was rewarding. 3. She's not as quick as she used to be.",
+        "explanation": "Tests detailed understanding and application of a specific correlative conjunction."
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "battle_document": "battle_document_20250816_015454.pdf",
+  "deployment_timestamp": "2025-08-16T01:55:01.542203",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 1,
+      "stealth": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "but",
+          "or",
+          "because",
+          "and"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (for, and, nor, but, or, yet, so) are the coordinating conjunctions.  'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "While usually required, a comma before a coordinating conjunction joining two short independent clauses may be omitted."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The conjunctions 'both...and' are an example of _______________ conjunctions.",
+        "answer": "correlative coordinating",
+        "explanation": "These conjunctions work in pairs to connect elements of equal grammatical rank."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each and illustrating their function in a sentence.",
+        "answer": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank.  For example, in 'Mary went to the store, and John stayed home,' 'and' connects two independent clauses. Subordinating conjunctions join a dependent clause to an independent clause, showing the relationship between them.  For example, in 'Because it was raining, Mary stayed home,' 'because' introduces a dependent clause explaining why Mary stayed home."
+      },
+      {
+        "type": "mcq",
+        "question": "Which conjunction pair is correctly categorized?",
+        "options": [
+          "either...or (subordinating)",
+          "because...so (coordinating)",
+          "not only...but also (correlative coordinating)",
+          "when...then (correlative coordinating)"
+        ],
+        "answer": "not only...but also (correlative coordinating)",
+        "explanation": "Only 'not only...but also' fits the definition of correlative coordinating conjunctions."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions introduce independent clauses.",
+        "answer": false,
+        "explanation": "Subordinating conjunctions introduce dependent clauses."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym FANBOYS is used to remember the _______________ conjunctions.",
+        "answer": "coordinating",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "stealth",
+        "question": "Provide one example of a sentence using a correlative coordinating conjunction from the provided text, and identify the conjunction.",
+        "answer": "Example sentence: The more you visit the Writing Center, the more your writing will improve. Conjunction: the more...the more",
+        "explanation": "Demonstrates understanding of both correlative conjunctions and their usage."
+      }
+    ]
+  }
+}

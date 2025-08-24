@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250822_115005.pdf",
+  "deployment_timestamp": "2025-08-22T11:50:18.595446",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a valid way to declare a variable of type integer in Java?",
+        "type": "mcq",
+        "options": [
+          "A) int x = 10;",
+          "B) int x = 10.5;",
+          "C) int x; x = 10;",
+          "D) final int x = 10;"
+        ],
+        "correct_answer": "B",
+        "explanation": "Option B attempts to assign a floating-point value (10.5) to an integer variable, which is not allowed without explicit casting."
+      },
+      {
+        "question": "What is the purpose of the `public static void main(String[] args)` method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) It defines a class variable.",
+          "B) It's the entry point of the program's execution.",
+          "C) It handles program exceptions.",
+          "D) It declares an array of strings."
+        ],
+        "correct_answer": "B",
+        "explanation": "The `main` method is where the Java Virtual Machine (JVM) begins executing the code.  It's the program's starting point."
+      },
+      {
+        "question": "What will the following Java code print to the console? \n`System.out.println(\"Hello, \" + 5 + 5);`",
+        "type": "mcq",
+        "options": [
+          "A) Hello, 10",
+          "B) Hello, 55",
+          "C) Hello, 10.0",
+          "D) An error"
+        ],
+        "correct_answer": "B",
+        "explanation": "Java performs string concatenation in the order of operations. The '+' operator acts as concatenation when one operand is a string."
+      },
+      {
+        "question": "Which Java keyword is used to prevent a variable's value from being changed after initialization?",
+        "type": "mcq",
+        "options": [
+          "A) static",
+          "B) public",
+          "C) final",
+          "D) void"
+        ],
+        "correct_answer": "C",
+        "explanation": "The `final` keyword creates a constant variable; its value cannot be modified after assignment."
+      },
+      {
+        "question": "What is the purpose of importing `java.util.*` in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) It imports all classes from the `java.util` package.",
+          "B) It imports only the `Date` class.",
+          "C) It defines a new package named `java.util`.",
+          "D) It's unnecessary; Java automatically includes `java.util`."
+        ],
+        "correct_answer": "A",
+        "explanation": "The `*` wildcard imports all classes within the specified package, providing access to their functionalities."
+      },
+      {
+        "question": "Which comment style in Java is best suited for documenting a method's purpose, parameters, and return values?",
+        "type": "mcq",
+        "options": [
+          "A) Single-line comment (`//`) only",
+          "B) Multi-line comment (`/* */`) only",
+          "C) Javadoc style comments (`/** */`)",
+          "D) Any of the above; they serve the same purpose"
+        ],
+        "correct_answer": "C",
+        "explanation": "Javadoc style comments are specifically designed for generating API documentation.  They use a special format for documenting code elements."
+      },
+      {
+        "question": "What data type would be most appropriate to store a student's GPA (Grade Point Average)?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) char",
+          "C) boolean",
+          "D) float"
+        ],
+        "correct_answer": "D",
+        "explanation": "GPA values are typically floating-point numbers (e.g., 3.5, 2.8), requiring a floating-point data type like `float` or `double`."
+      },
+      {
+        "question": "In the given examples, what is the role of `javac` and `java` commands?",
+        "type": "mcq",
+        "options": [
+          "A) `javac` interprets bytecode, and `java` compiles source code.",
+          "B) `javac` compiles source code, and `java` interprets bytecode.",
+          "C) Both compile source code.",
+          "D) Both interpret bytecode."
+        ],
+        "correct_answer": "B",
+        "explanation": "`javac` is the Java compiler, converting `.java` source code into `.class` bytecode. `java` is the Java interpreter, running the bytecode."
+      }
+    ]
+  }
+}

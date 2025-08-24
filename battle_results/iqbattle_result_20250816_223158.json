@@ -1,0 +1,86 @@
+{
+  "battle_document": "battle_document_20250816_223152.pdf",
+  "deployment_timestamp": "2025-08-16T22:31:58.960922",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "stealth": 1,
+      "intelligence": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "for",
+          "and",
+          "nor",
+          "because",
+          "but",
+          "or",
+          "yet",
+          "so"
+        ],
+        "answer": "because",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) are the coordinating conjunctions.  'Because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is usually required, but it can be omitted if the clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "This is explicitly stated in the document."
+      },
+      {
+        "type": "stealth",
+        "question": "Provide an example sentence using the correlative conjunction 'both...and'.",
+        "answer": "Both Mary and John went to the Writing Center.",
+        "explanation": "This demonstrates understanding of correlative conjunctions and their usage."
+      },
+      {
+        "type": "mcq",
+        "question": "Which type of conjunction connects a dependent clause to an independent clause?",
+        "options": [
+          "Coordinating",
+          "Correlative Coordinating",
+          "Subordinating",
+          "Adverbial"
+        ],
+        "answer": "Subordinating",
+        "explanation": "The document defines subordinating conjunctions' function."
+      },
+      {
+        "type": "true_false",
+        "question": "The conjunctions 'as...as' and 'the more...the more' are examples of subordinating correlative conjunctions.",
+        "answer": false,
+        "explanation": "They are examples of correlative coordinating conjunctions."
+      },
+      {
+        "type": "fill_blank",
+        "question": "When joining more than two words or phrases with a coordinating conjunction, a comma is used ________ each section of the series.",
+        "answer": "between",
+        "explanation": "The document specifies comma usage in lists."
+      },
+      {
+        "type": "intelligence",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least one example of each.",
+        "answer": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank (e.g., Mary went to the store, and John stayed home). Subordinating conjunctions connect a dependent clause to an independent clause, showing the relationship between them (e.g., Because it was raining, Mary stayed home).",
+        "explanation": "This demonstrates a comprehensive understanding of the two conjunction types."
+      }
+    ]
+  }
+}

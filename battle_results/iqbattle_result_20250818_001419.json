@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250818_001411.pdf",
+  "deployment_timestamp": "2025-08-18T00:14:19.048188",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) But",
+          "B) And",
+          "C) Because",
+          "D) Or"
+        ],
+        "correct_answer": "C",
+        "explanation": "Because is a subordinating conjunction, not a coordinating conjunction.  Coordinating conjunctions connect elements of equal grammatical rank."
+      },
+      {
+        "question": "What punctuation is typically used when joining two independent clauses with a coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Semicolon",
+          "B) Colon",
+          "C) Comma",
+          "D) No punctuation needed"
+        ],
+        "correct_answer": "C",
+        "explanation": "A comma is typically placed before the coordinating conjunction when joining two independent clauses.  Exceptions exist for very short clauses."
+      },
+      {
+        "question": "Identify the correlative conjunction pair in the sentence:  'Not only did she study hard, but also she received excellent grades.'",
+        "type": "mcq",
+        "options": [
+          "A) Not only...so",
+          "B) Not only...but also",
+          "C) But...also",
+          "D) So...but"
+        ],
+        "correct_answer": "B",
+        "explanation": "'Not only...but also' is a correlative conjunction pair.  Correlative conjunctions work in pairs to connect similar grammatical elements."
+      },
+      {
+        "question": "Which sentence correctly uses coordinating conjunctions to join three phrases?",
+        "type": "mcq",
+        "options": [
+          "A) She ate pizza, drank soda and watched TV.",
+          "B) She ate pizza; drank soda; and watched TV.",
+          "C) She ate pizza drank soda, and watched TV.",
+          "D) She ate pizza, drank soda and, watched TV."
+        ],
+        "correct_answer": "A",
+        "explanation": "Option A correctly uses commas to separate the three phrases and uses a coordinating conjunction before the last phrase.  Options B, C, and D have incorrect punctuation."
+      },
+      {
+        "question": "The sentence 'Although it rained, we went to the park' contains what type of conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Correlative",
+          "C) Subordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "'Although' is a subordinating conjunction; it introduces a dependent clause that modifies the independent clause."
+      },
+      {
+        "question": "What is the FANBOYS acronym used for?",
+        "type": "mcq",
+        "options": [
+          "A) Remembering subordinating conjunctions",
+          "B) Remembering correlative conjunctions",
+          "C) Remembering coordinating conjunctions",
+          "D) Remembering adverbial conjunctions"
+        ],
+        "correct_answer": "C",
+        "explanation": "FANBOYS is a mnemonic device to remember the seven coordinating conjunctions: For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "question": "In the sentence 'The more you practice, the better you will become,' what type of conjunction is used?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Subordinating",
+          "C) Correlative coordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "'The more...the better' is a correlative coordinating conjunction, functioning in a pair to connect two clauses."
+      },
+      {
+        "question": "Which of the following best illustrates the use of a subordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Mary went to the store, and John stayed home.",
+          "B) I will go if you come.",
+          "C) Neither rain nor snow will stop us.",
+          "D) He is both smart and kind."
+        ],
+        "correct_answer": "B",
+        "explanation": "'If' is a subordinating conjunction connecting a dependent clause ('if you come') to an independent clause ('I will go')."
+      }
+    ]
+  }
+}

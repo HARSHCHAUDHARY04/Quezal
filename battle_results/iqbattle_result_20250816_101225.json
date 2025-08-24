@@ -1,0 +1,79 @@
+{
+  "battle_document": "battle_document_20250816_101218.pdf",
+  "deployment_timestamp": "2025-08-16T10:12:25.792460",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 2,
+      "fill_blank": 2,
+      "essay": 2
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "options": [
+          "and",
+          "but",
+          "because",
+          "or"
+        ],
+        "answer": "because",
+        "explanation": "Because is a subordinating conjunction, connecting a dependent clause to an independent clause."
+      },
+      {
+        "type": "true_false",
+        "question": "A comma is always required before a coordinating conjunction joining two independent clauses.",
+        "answer": false,
+        "explanation": "A comma is usually required, but it can be omitted if the clauses are very short."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The acronym _______ is used to remember the coordinating conjunctions.",
+        "answer": "FANBOYS",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between coordinating and subordinating conjunctions, providing at least two examples of each in sentences.",
+        "answer": "Coordinating conjunctions join words, phrases, or clauses of equal grammatical rank.  Examples:  'Mary went to the store, and John stayed home.' (joins two independent clauses); 'Apples and oranges are fruits.' (joins two words). Subordinating conjunctions join a dependent clause to an independent clause, showing the relationship between them. Examples: 'Because it was raining, I stayed inside.' (subordinating 'because' introduces the reason); 'If you study hard, you will succeed.' (subordinating 'if' introduces a condition)."
+      },
+      {
+        "type": "mcq",
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "options": [
+          "both...and",
+          "neither...nor",
+          "then...because",
+          "either...or"
+        ],
+        "answer": "then...because",
+        "explanation": "Then...because is not a standard pair of correlative conjunctions.  'Then' is an adverb and 'because' is a subordinating conjunction."
+      },
+      {
+        "type": "true_false",
+        "question": "Subordinating conjunctions connect independent clauses of equal rank.",
+        "answer": false,
+        "explanation": "Subordinating conjunctions connect dependent clauses to independent clauses."
+      },
+      {
+        "type": "fill_blank",
+        "question": "When joining more than two items in a series using coordinating conjunctions, a comma should be used between each item, and a comma may or may not be used before the final _________.",
+        "answer": "conjunction",
+        "explanation": "The document explicitly states this rule."
+      },
+      {
+        "type": "essay",
+        "question": "Provide a sentence that uses both a coordinating and a subordinating conjunction.",
+        "answer": "I went to the Writing Center, and because I needed help with my essay, I asked for assistance."
+      }
+    ]
+  }
+}

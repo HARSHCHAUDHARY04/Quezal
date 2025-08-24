@@ -1,0 +1,75 @@
+{
+  "battle_document": "battle_document_20250816_014849.pdf",
+  "deployment_timestamp": "2025-08-16T01:48:56.367223",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "fill_blank",
+    "question_formation": {
+      "fill_blank": 2,
+      "fill-blank": 6
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "The acronym FANBOYS helps remember the seven _______ conjunctions.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "coordinating",
+        "explanation": "FANBOYS is a mnemonic device for the coordinating conjunctions: for, and, nor, but, or, yet, so."
+      },
+      {
+        "question": "When joining two independent clauses with a coordinating conjunction, a _______ is typically used before the conjunction.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "comma",
+        "explanation": "This is a standard rule of punctuation for compound sentences."
+      },
+      {
+        "question": "Conjunctions connect words, phrases, or _______ of equal rank.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "clauses",
+        "explanation": "Coordinating conjunctions specifically link elements of similar grammatical function."
+      },
+      {
+        "question": "The conjunctions 'both...and' are an example of _______ coordinating conjunctions.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "correlative",
+        "explanation": "Correlative conjunctions always appear in pairs."
+      },
+      {
+        "question": "Subordinating conjunctions connect a dependent clause to an _______ clause.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "independent",
+        "explanation": "This is the defining characteristic of subordinating conjunctions."
+      },
+      {
+        "question": "The sentence 'The more you practice, the better you'll become' uses _______ correlative conjunctions.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "correlative",
+        "explanation": "This demonstrates a specific type of correlative conjunction showcasing a comparative relationship."
+      },
+      {
+        "question": "In the sentence 'Mary went to the store, and John stayed home,' the comma is used because it joins two _______ clauses.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "independent",
+        "explanation": "The comma before the coordinating conjunction is necessary for proper punctuation in compound sentences."
+      },
+      {
+        "question": "Conjunctions help _______ sentence structure and connect ideas.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "vary",
+        "explanation": "One of the functions of conjunctions listed in the text is to vary sentence structure and connect ideas."
+      }
+    ]
+  }
+}

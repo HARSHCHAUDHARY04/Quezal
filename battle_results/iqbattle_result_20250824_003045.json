@@ -1,0 +1,138 @@
+{
+  "battle_document": "battle_document_20250824_003031.pdf",
+  "deployment_timestamp": "2025-08-24T00:30:45.202583",
+  "battle_parameters": {
+    "num_questions": 10,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 10
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a valid Java primitive data type?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) string",
+          "C) double",
+          "D) boolean"
+        ],
+        "correct_answer": "B",
+        "explanation": "String is a reference type, not a primitive type in Java.  Primitive types are listed in the document as byte, short, int, long, float, double, char, and boolean."
+      },
+      {
+        "question": "What is the purpose of the 'main' method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To define a class",
+          "B) To handle user input",
+          "C) To be the entry point of execution",
+          "D) To create objects"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'main' method is where the Java Virtual Machine (JVM) begins execution of a program."
+      },
+      {
+        "question": "What keyword is used to declare a constant variable in Java?",
+        "type": "mcq",
+        "options": [
+          "A) static",
+          "B) final",
+          "C) const",
+          "D) variable"
+        ],
+        "correct_answer": "B",
+        "explanation": "The 'final' keyword prevents modification of a variable's value after initialization."
+      },
+      {
+        "question": "How do you create a multi-line comment in Java?",
+        "type": "mcq",
+        "options": [
+          "A) // This is a comment",
+          "B) /* This is a comment */",
+          "C) # This is a comment",
+          "D) ' This is a comment '"
+        ],
+        "correct_answer": "B",
+        "explanation": "Multi-line comments in Java are enclosed within /* and */."
+      },
+      {
+        "question": "Which command compiles a Java source code file named 'MyProgram.java'?",
+        "type": "mcq",
+        "options": [
+          "A) java MyProgram.java",
+          "B) javac MyProgram",
+          "C) java MyProgram",
+          "D) javac MyProgram.java"
+        ],
+        "correct_answer": "D",
+        "explanation": "The javac command is the Java compiler, and it requires the .java extension."
+      },
+      {
+        "question": "What is the return type of a method that does not return any value?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) void",
+          "C) String",
+          "D) boolean"
+        ],
+        "correct_answer": "B",
+        "explanation": "'void' signifies that the method doesn't return a value."
+      },
+      {
+        "question": "Which access modifier provides the least restrictive access to a class member?",
+        "type": "mcq",
+        "options": [
+          "A) private",
+          "B) protected",
+          "C) public",
+          "D) default"
+        ],
+        "correct_answer": "C",
+        "explanation": "'public' access members are accessible from anywhere."
+      },
+      {
+        "question": "What does the java.util.* import statement do?",
+        "type": "mcq",
+        "options": [
+          "A) Imports only the Date class",
+          "B) Imports all classes from the java.util package",
+          "C) Imports all classes from the java package",
+          "D) Imports only the String class"
+        ],
+        "correct_answer": "B",
+        "explanation": "The '*' wildcard imports all classes within the specified package."
+      },
+      {
+        "question": "What is the purpose of a class in Java?",
+        "type": "mcq",
+        "options": [
+          "A) To execute a single line of code",
+          "B) To define a data type",
+          "C) To create a method",
+          "D) To define a blueprint for objects"
+        ],
+        "correct_answer": "D",
+        "explanation": "Classes serve as blueprints for creating objects. They contain variables (data) and methods (actions)."
+      },
+      {
+        "question": "What data type would be most appropriate to store a person's age?",
+        "type": "mcq",
+        "options": [
+          "A) float",
+          "B) double",
+          "C) char",
+          "D) int"
+        ],
+        "correct_answer": "D",
+        "explanation": "Age is typically represented as a whole number, making 'int' the most suitable choice."
+      }
+    ]
+  }
+}

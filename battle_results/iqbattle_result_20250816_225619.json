@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_225611.pdf",
+  "deployment_timestamp": "2025-08-16T22:56:19.317082",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) but",
+          "B) or",
+          "C) since",
+          "D) yet"
+        ],
+        "correct_answer": "C",
+        "explanation": "Since is a subordinating conjunction, connecting a dependent clause to an independent clause."
+      },
+      {
+        "question": "When joining two independent clauses with a coordinating conjunction, what punctuation is typically required?",
+        "type": "mcq",
+        "options": [
+          "A) Semicolon",
+          "B) Colon",
+          "C) Comma",
+          "D) No punctuation"
+        ],
+        "correct_answer": "C",
+        "explanation": "A comma is placed before the coordinating conjunction when joining two independent clauses.  Exception: very short clauses."
+      },
+      {
+        "question": "Which set exemplifies the correct use of a comma with coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) Mary went to the store and bought milk.",
+          "B) Mary went to the store, and bought milk.",
+          "C) Mary went to the store and, bought milk.",
+          "D) Mary, went to the store and bought milk."
+        ],
+        "correct_answer": "A",
+        "explanation": "Option A correctly joins two short independent clauses without a comma since they're brief."
+      },
+      {
+        "question": "Identify the correlative conjunction in the sentence: 'Not only did she study hard, but also she aced the test.'",
+        "type": "mcq",
+        "options": [
+          "A) only...but",
+          "B) not only...but also",
+          "C) did...aced",
+          "D) hard...test"
+        ],
+        "correct_answer": "B",
+        "explanation": " 'Not only...but also' functions as a pair of correlative coordinating conjunctions."
+      },
+      {
+        "question": "Which sentence correctly uses a correlative conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Either rain or shine, we'll go.",
+          "B) Neither the cat or the dog barked.",
+          "C) Both dogs and cats are pets, but only the cats are allowed inside.",
+          "D) Both A and C are correct."
+        ],
+        "correct_answer": "D",
+        "explanation": "Both options A and C correctly utilize correlative conjunctions ('either...or' and 'both...and'). Option B is incorrect because it uses 'or' instead of 'nor'."
+      },
+      {
+        "question": "What type of conjunction connects a dependent clause to an independent clause?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating Conjunction",
+          "B) Correlative Conjunction",
+          "C) Subordinating Conjunction",
+          "D) Adverbial Conjunction"
+        ],
+        "correct_answer": "C",
+        "explanation": "Subordinating conjunctions introduce dependent clauses and show their relationship to independent clauses."
+      },
+      {
+        "question": "The sentence 'Although it was raining, we went for a walk' uses which type of conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Correlative",
+          "C) Subordinating",
+          "D) None of the above"
+        ],
+        "correct_answer": "C",
+        "explanation": "'Although' is a subordinating conjunction, introducing a dependent clause ('Although it was raining')."
+      },
+      {
+        "question": "What is the acronym used to remember the coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) SCAB",
+          "B) FANBOYS",
+          "C) COWBOYS",
+          "D)  SMART"
+        ],
+        "correct_answer": "B",
+        "explanation": "FANBOYS (For, And, Nor, But, Or, Yet, So) is a mnemonic device to remember the coordinating conjunctions."
+      }
+    ]
+  }
+}

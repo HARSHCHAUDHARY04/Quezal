@@ -1,0 +1,162 @@
+{
+  "battle_document": "battle_document_20250822_214932.pdf",
+  "deployment_timestamp": "2025-08-22T21:49:45.589806",
+  "battle_parameters": {
+    "num_questions": 12,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 12
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which keyword is used to prevent a variable's value from being changed after initialization?",
+        "type": "mcq",
+        "options": [
+          "A) static",
+          "B) public",
+          "C) final",
+          "D) void"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'final' keyword declares a constant variable."
+      },
+      {
+        "question": "What is the purpose of the 'main' method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To define class variables",
+          "B) To handle exceptions",
+          "C) To serve as the entry point of execution",
+          "D) To declare methods"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'main' method is where program execution begins."
+      },
+      {
+        "question": "Which of these is NOT a primitive data type in Java?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) String",
+          "C) boolean",
+          "D) double"
+        ],
+        "correct_answer": "B",
+        "explanation": "String is a reference type, not a primitive type."
+      },
+      {
+        "question": "What is the purpose of comments in Java code?",
+        "type": "mcq",
+        "options": [
+          "A) To improve compilation speed",
+          "B) To confuse the compiler",
+          "C) To enhance code readability and understanding",
+          "D) To affect program execution"
+        ],
+        "correct_answer": "C",
+        "explanation": "Comments are for human readers, explaining code logic."
+      },
+      {
+        "question": "What does 'javac Hello.java' do?",
+        "type": "mcq",
+        "options": [
+          "A) Runs the Hello program",
+          "B) Compiles the Hello program",
+          "C) Interprets the Hello program",
+          "D) Deletes the Hello program"
+        ],
+        "correct_answer": "B",
+        "explanation": "This command compiles the Java source code into bytecode."
+      },
+      {
+        "question": "What is the purpose of 'import java.util.*;'?",
+        "type": "mcq",
+        "options": [
+          "A) Imports all classes from the 'java.util' package",
+          "B) Defines a new utility class",
+          "C) Creates a new package",
+          "D) Declares a variable"
+        ],
+        "correct_answer": "A",
+        "explanation": "This line imports all classes from the 'java.util' package, making them accessible in the code."
+      },
+      {
+        "question": "What does 'System.out.println();' do?",
+        "type": "mcq",
+        "options": [
+          "A) Reads input from the user",
+          "B) Prints output to the console",
+          "C) Creates a new file",
+          "D) Defines a new class"
+        ],
+        "correct_answer": "B",
+        "explanation": "This statement prints a line of text to the console."
+      },
+      {
+        "question": "Which access modifier provides the least restrictive access to a class member?",
+        "type": "mcq",
+        "options": [
+          "A) private",
+          "B) protected",
+          "C) public",
+          "D) default"
+        ],
+        "correct_answer": "C",
+        "explanation": "'public' members are accessible from anywhere."
+      },
+      {
+        "question": "What is the difference between a class and an object in Java?",
+        "type": "mcq",
+        "options": [
+          "A) There is no difference",
+          "B) A class is an instance of an object",
+          "C) An object is an instance of a class",
+          "D) A class is a data type, an object is a method"
+        ],
+        "correct_answer": "C",
+        "explanation": "A class is a blueprint; an object is a concrete instance of that blueprint."
+      },
+      {
+        "question": "What data type would best represent the number of babies?",
+        "type": "mcq",
+        "options": [
+          "A) float",
+          "B) double",
+          "C) int",
+          "D) String"
+        ],
+        "correct_answer": "C",
+        "explanation": "The number of babies is a whole number, best represented by 'int'."
+      },
+      {
+        "question": "In the provided example, what is the return type of the 'main' method?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) String",
+          "C) void",
+          "D) boolean"
+        ],
+        "correct_answer": "C",
+        "explanation": "'void' indicates that the method does not return a value."
+      },
+      {
+        "question": "A multi-line comment in Java starts with which symbol(s)?",
+        "type": "mcq",
+        "options": [
+          "A) //",
+          "B) /*",
+          "C) // ",
+          "D) /**"
+        ],
+        "correct_answer": "B",
+        "explanation": "/* ... */ denotes a multi-line comment."
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_225252.pdf",
+  "deployment_timestamp": "2025-08-16T22:53:01.056255",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction according to the text?",
+        "type": "mcq",
+        "options": [
+          "A) But",
+          "B) Or",
+          "C) Since",
+          "D) Yet"
+        ],
+        "correct_answer": "C",
+        "explanation": "The text lists 'FANBOYS' (for, and, nor, but, or, yet, so) as coordinating conjunctions. 'Since' is a subordinating conjunction."
+      },
+      {
+        "question": "According to the text, when is a comma NOT typically used with coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) Joining two independent clauses",
+          "B) Joining two words",
+          "C) Joining more than two phrases",
+          "D) Joining two subordinate clauses"
+        ],
+        "correct_answer": "B",
+        "explanation": "The text states that commas are not used when joining two words, phrases, or subordinate clauses."
+      },
+      {
+        "question": "What is the primary function of correlative coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) Connecting independent clauses",
+          "B) Connecting dependent clauses to independent clauses",
+          "C) Connecting words, phrases, or clauses of equal rank in pairs",
+          "D) Introducing dependent clauses"
+        ],
+        "correct_answer": "C",
+        "explanation": "The text defines correlative coordinating conjunctions as functioning like coordinating conjunctions but in pairs."
+      },
+      {
+        "question": "Which pair is NOT an example of correlative coordinating conjunctions as listed in the text?",
+        "type": "mcq",
+        "options": [
+          "A) Both...and",
+          "B) Either...or",
+          "C) Because...so",
+          "D) Neither...nor"
+        ],
+        "correct_answer": "C",
+        "explanation": "'Because...so' is not listed as a pair of correlative coordinating conjunctions."
+      },
+      {
+        "question": "What type of conjunction connects a dependent clause to an independent clause?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating conjunction",
+          "B) Correlative coordinating conjunction",
+          "C) Subordinating conjunction",
+          "D) Adverbial conjunction"
+        ],
+        "correct_answer": "C",
+        "explanation": "The text explicitly states that subordinating conjunctions connect dependent and independent clauses."
+      },
+      {
+        "question": "The sentence 'Mary went to the store, and she bought milk' exemplifies which punctuation rule regarding coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) No comma needed between short independent clauses",
+          "B) A comma is used before the conjunction joining independent clauses",
+          "C) A comma is used before the conjunction joining subordinate clauses",
+          "D) Commas are not necessary when joining independent clauses"
+        ],
+        "correct_answer": "B",
+        "explanation": "The sentence shows two independent clauses joined by a comma and the coordinating conjunction 'and'."
+      },
+      {
+        "question": "The acronym FANBOYS is useful for remembering which type of conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) Subordinating conjunctions",
+          "B) Correlative coordinating conjunctions",
+          "C) Coordinating conjunctions",
+          "D) Adverbial conjunctions"
+        ],
+        "correct_answer": "C",
+        "explanation": "The text explicitly states that FANBOYS is a mnemonic device for coordinating conjunctions."
+      },
+      {
+        "question": "In the sentence 'The more you practice, the better you'll become,' what type of conjunction is used?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating conjunction",
+          "B) Subordinating conjunction",
+          "C) Correlative coordinating conjunction",
+          "D) Adverbial conjunction"
+        ],
+        "correct_answer": "C",
+        "explanation": "The sentence uses 'the more...the better,' which is a pair of correlative coordinating conjunctions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250822_105909.pdf",
+  "deployment_timestamp": "2025-08-22T10:59:21.875765",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a valid Java primitive data type?",
+        "type": "mcq",
+        "options": [
+          "A) int",
+          "B) String",
+          "C) double",
+          "D) boolean"
+        ],
+        "correct_answer": "B",
+        "explanation": "String is a reference type, not a primitive type in Java.  Primitive types are defined in the provided text."
+      },
+      {
+        "question": "What is the purpose of the `main` method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To define the class structure",
+          "B) To handle user input",
+          "C) To serve as the entry point for program execution",
+          "D) To manage memory allocation"
+        ],
+        "correct_answer": "C",
+        "explanation": "The `main` method is where the program's execution begins, as stated in the briefing document."
+      },
+      {
+        "question": "What are the two ways to write comments in Java code as described in the briefing?",
+        "type": "mcq",
+        "options": [
+          "A) // and /* */",
+          "B) # and ;",
+          "C) /* */ and {} ",
+          "D) // and ;"
+        ],
+        "correct_answer": "A",
+        "explanation": "The briefing explicitly mentions `//` for single-line comments and `/* */` for multi-line comments."
+      },
+      {
+        "question": "A Java program consists of:",
+        "type": "mcq",
+        "options": [
+          "A) Only primitive data types",
+          "B) Only one class",
+          "C) Classes (existing and/or new) and at least one class with a main method",
+          "D) Only methods and variables"
+        ],
+        "correct_answer": "C",
+        "explanation": "The briefing clearly states a Java program comprises classes, including one with a `main` method."
+      },
+      {
+        "question": "What is the purpose of the `import` statement in Java?",
+        "type": "mcq",
+        "options": [
+          "A) To create new classes",
+          "B) To access pre-defined classes from libraries",
+          "C) To compile the code",
+          "D) To declare variables"
+        ],
+        "correct_answer": "B",
+        "explanation": "The `import` statement allows the use of classes from external libraries, shown in the `HelloDate` example."
+      },
+      {
+        "question": "Which keyword is used to declare a constant variable in Java?",
+        "type": "mcq",
+        "options": [
+          "A) static",
+          "B) final",
+          "C) constant",
+          "D) var"
+        ],
+        "correct_answer": "B",
+        "explanation": "The briefing uses the `final` keyword in its example of constant variable declaration."
+      },
+      {
+        "question": "What command is used to compile a Java file named `MyProgram.java`?",
+        "type": "mcq",
+        "options": [
+          "A) java MyProgram.java",
+          "B) javac MyProgram",
+          "C) compile MyProgram.java",
+          "D) javac MyProgram.java"
+        ],
+        "correct_answer": "D",
+        "explanation": "The briefing shows the `javac` command for compiling Java source code."
+      },
+      {
+        "question": "What does the `void` keyword indicate in a method declaration?",
+        "type": "mcq",
+        "options": [
+          "A) The method returns an integer value",
+          "B) The method does not return any value",
+          "C) The method takes no arguments",
+          "D) The method is private"
+        ],
+        "correct_answer": "B",
+        "explanation": "The briefing states that `void` signifies a method that does not return a value."
+      }
+    ]
+  }
+}

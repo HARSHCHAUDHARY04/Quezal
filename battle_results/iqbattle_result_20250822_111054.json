@@ -1,0 +1,159 @@
+{
+  "battle_document": "battle_document_20250822_111038.pdf",
+  "deployment_timestamp": "2025-08-22T11:10:54.541745",
+  "battle_parameters": {
+    "num_questions": 20,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "fill_blank",
+    "question_formation": {
+      "fill_blank": 8,
+      "fill-blank": 12
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "In Java, a _______ is a collection of _______ and _______.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "class; variables; methods",
+        "explanation": "A class is the fundamental building block in Java, containing data (variables) and actions (methods)."
+      },
+      {
+        "question": "The _______ statement is used to import external _______ into a Java program.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "import; libraries",
+        "explanation": "The import statement allows access to pre-written code from external libraries."
+      },
+      {
+        "question": "Every statement in Java must end with a _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "semicolon (;)",
+        "explanation": "The semicolon is used to terminate statements in Java."
+      },
+      {
+        "question": "To compile a Java program named MyProgram.java, you would use the command _______.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "javac MyProgram.java",
+        "explanation": "javac is the Java compiler used to translate source code into bytecode."
+      },
+      {
+        "question": "To run a compiled Java program named MyProgram, you would use the command _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "java MyProgram",
+        "explanation": "java is the Java interpreter used to execute bytecode."
+      },
+      {
+        "question": "A multi-line comment in Java starts with _______ and ends with _______.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "/*; */",
+        "explanation": "These symbols delimit multi-line comments in Java source code."
+      },
+      {
+        "question": "A single-line comment in Java starts with _______.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "//",
+        "explanation": "This symbol indicates a single-line comment in Java."
+      },
+      {
+        "question": "The keyword _______ is used to declare a constant variable in Java.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "final",
+        "explanation": "\"final\" indicates a constant whose value cannot change after assignment."
+      },
+      {
+        "question": "In Java, the _______ method is the entry point of a program.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "main",
+        "explanation": "The main method is the first method called when a program executes."
+      },
+      {
+        "question": "The _______ data type in Java represents a single character.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "char",
+        "explanation": "char holds a single Unicode character."
+      },
+      {
+        "question": "The _______ data type in Java represents a boolean value (true or false).",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "boolean",
+        "explanation": "boolean represents true or false values."
+      },
+      {
+        "question": "The _______ data type in Java is used for whole numbers.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "int",
+        "explanation": "int is a 32-bit integer data type."
+      },
+      {
+        "question": "In Java,  _______ is a 64-bit integer data type.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "long",
+        "explanation": "long provides a larger integer range than int."
+      },
+      {
+        "question": "The _______ access modifier in Java means that a class member can only be accessed from within the same class.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "private",
+        "explanation": "private restricts access to members within the defining class."
+      },
+      {
+        "question": "The _______ access modifier in Java grants access to a class member from anywhere.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "public",
+        "explanation": "public allows access from any other class."
+      },
+      {
+        "question": "In the statement `int x = 5;`, `int` is the _______ and `x` is the _______.",
+        "type": "fill_blank",
+        "options": [],
+        "correct_answer": "data type; variable name",
+        "explanation": "Data type specifies the kind of data stored; variable name is its identifier."
+      },
+      {
+        "question": "The `System.out.println()` method is used to _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "print output to the console",
+        "explanation": "This method displays text or other data in the console."
+      },
+      {
+        "question": "The java.util.Date class is used to represent a _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "point in time",
+        "explanation": "This class provides functionality for date and time manipulation."
+      },
+      {
+        "question": "In the context of Java,  a _______ is an instance of a _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "object; class",
+        "explanation": "An object is a concrete realization of a class's blueprint."
+      },
+      {
+        "question": "The `String` data type in Java is actually a _______.",
+        "type": "fill-blank",
+        "options": [],
+        "correct_answer": "class",
+        "explanation": "Although used like a primitive, String is a class in Java."
+      }
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_235752.pdf",
+  "deployment_timestamp": "2025-08-16T23:58:01.744019",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) but",
+          "B) and",
+          "C) because",
+          "D) or"
+        ],
+        "correct_answer": "C",
+        "explanation": "Coordinating conjunctions (FANBOYS) are for, and, nor, but, or, yet, so. 'Because' is a subordinating conjunction."
+      },
+      {
+        "question": "A comma is ALWAYS required before a coordinating conjunction when:",
+        "type": "mcq",
+        "options": [
+          "A) Joining two words",
+          "B) Joining two independent clauses",
+          "C) Joining two phrases",
+          "D) Joining two subordinate clauses"
+        ],
+        "correct_answer": "B",
+        "explanation": "While a comma is often omitted with short independent clauses, it's grammatically correct and generally recommended before a coordinating conjunction linking two independent clauses."
+      },
+      {
+        "question": "What type of conjunction connects a dependent clause to an independent clause?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Correlative Coordinating",
+          "C) Subordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "Subordinating conjunctions introduce dependent clauses, which cannot stand alone as complete sentences."
+      },
+      {
+        "question": "Which pair is NOT an example of correlative coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) both...and",
+          "B) either...or",
+          "C) but...and",
+          "D) neither...nor"
+        ],
+        "correct_answer": "C",
+        "explanation": "Correlative conjunctions work in pairs.  'But' is a coordinating conjunction, but it doesn't pair with 'and' in a correlative structure."
+      },
+      {
+        "question": "In the sentence 'The more you practice, the better you become,' what type of conjunctions are used?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Subordinating",
+          "C) Correlative Coordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "The conjunctions 'the more...the better' are correlative coordinating conjunctions, working in a pair to connect clauses."
+      },
+      {
+        "question": "The sentence 'Mary went to the store, and she bought milk' requires a comma before 'and' because:",
+        "type": "mcq",
+        "options": [
+          "A) It joins two words",
+          "B) It joins two dependent clauses",
+          "C) It joins two independent clauses",
+          "D) It is optional in this case"
+        ],
+        "correct_answer": "C",
+        "explanation": "The sentence contains two independent clauses that can stand alone. A comma is needed before the coordinating conjunction 'and' to separate them."
+      },
+      {
+        "question": "Which of the following illustrates correct punctuation when using a coordinating conjunction to join multiple items?",
+        "type": "mcq",
+        "options": [
+          "A) I like apples oranges and bananas",
+          "B) I like apples, oranges and bananas",
+          "C) I like apples, oranges, and bananas",
+          "D) I like apples, oranges and, bananas"
+        ],
+        "correct_answer": "C",
+        "explanation": "Commas separate items in a series; a comma is typically placed before the final conjunction."
+      },
+      {
+        "question": "What is the acronym used to remember the coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) FANBOYS",
+          "B) SCABS",
+          "C) BOYSFAN",
+          "D) SUBCONJ"
+        ],
+        "correct_answer": "A",
+        "explanation": "FANBOYS is a common mnemonic device to remember the coordinating conjunctions: For, And, Nor, But, Or, Yet, So."
+      }
+    ]
+  }
+}

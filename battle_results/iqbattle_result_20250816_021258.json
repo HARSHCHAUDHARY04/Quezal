@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_021250.pdf",
+  "deployment_timestamp": "2025-08-16T02:12:58.389791",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction according to the FANBOYS acronym?",
+        "type": "mcq",
+        "options": [
+          "A) for",
+          "B) yet",
+          "C) since",
+          "D) so"
+        ],
+        "correct_answer": "C",
+        "explanation": "The FANBOYS acronym represents 'for, and, nor, but, or, yet, so'. 'Since' is a subordinating conjunction."
+      },
+      {
+        "question": "A comma is ALWAYS required before a coordinating conjunction when:",
+        "type": "mcq",
+        "options": [
+          "A) Joining two words",
+          "B) Joining two independent clauses",
+          "C) Joining two phrases",
+          "D) Joining two subordinate clauses"
+        ],
+        "correct_answer": "B",
+        "explanation": "While a comma is generally used before a coordinating conjunction joining independent clauses, it's optional for short clauses and not used when joining words, phrases, or subordinate clauses."
+      },
+      {
+        "question": "Identify the correlative conjunction pair in the following sentence:  'Neither rain nor snow could stop them.'",
+        "type": "mcq",
+        "options": [
+          "A) rain...snow",
+          "B) neither...nor",
+          "C) could...stop",
+          "D) rain...them"
+        ],
+        "correct_answer": "B",
+        "explanation": "Correlative conjunctions work in pairs.  'Neither...nor' is a correlative pair."
+      },
+      {
+        "question": "What type of conjunction connects a dependent clause to an independent clause?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating conjunction",
+          "B) Correlative coordinating conjunction",
+          "C) Subordinating conjunction",
+          "D) Adverbial conjunction"
+        ],
+        "correct_answer": "C",
+        "explanation": "Subordinating conjunctions introduce dependent clauses and show their relationship to the independent clause."
+      },
+      {
+        "question": "In the sentence 'Although it was raining, we went for a walk,' what is 'Although'?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating conjunction",
+          "B) Subordinating conjunction",
+          "C) Correlative conjunction",
+          "D) Preposition"
+        ],
+        "correct_answer": "B",
+        "explanation": "'Although' introduces a dependent clause and therefore is a subordinating conjunction."
+      },
+      {
+        "question": "Which sentence correctly uses commas with coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) The cat sat on the mat and the dog slept.",
+          "B)  The cat sat, on the mat and the dog slept.",
+          "C) The cat sat on the mat, and the dog slept.",
+          "D) The cat sat on the mat and the dog, slept."
+        ],
+        "correct_answer": "C",
+        "explanation": "Option C correctly uses a comma before the coordinating conjunction 'and' when joining two independent clauses."
+      },
+      {
+        "question": "The sentence 'The more you practice, the better you'll become' uses which type of conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Subordinating",
+          "C) Correlative Coordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "This sentence uses the correlative conjunction pair 'the more...the better'."
+      },
+      {
+        "question": "What is the primary function of conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) To modify nouns",
+          "B) To connect words, phrases, or clauses",
+          "C) To act as the subject of a sentence",
+          "D) To describe actions"
+        ],
+        "correct_answer": "B",
+        "explanation": "The document explicitly states that conjunctions connect words, phrases, or clauses."
+      }
+    ]
+  }
+}

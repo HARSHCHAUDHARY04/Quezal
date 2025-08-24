@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_101007.pdf",
+  "deployment_timestamp": "2025-08-16T10:10:15.935168",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following is NOT a coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) But",
+          "B) And",
+          "C) Because",
+          "D) Or"
+        ],
+        "correct_answer": "C",
+        "explanation": "Because is a subordinating conjunction, not a coordinating conjunction (FANBOYS)."
+      },
+      {
+        "question": "A comma is ALWAYS required before a coordinating conjunction when:",
+        "type": "mcq",
+        "options": [
+          "A) Joining two words",
+          "B) Joining two short independent clauses",
+          "C) Joining two independent clauses",
+          "D) Joining two subordinate clauses"
+        ],
+        "correct_answer": "C",
+        "explanation": "While a comma is often omitted with very short independent clauses, it's always grammatically correct and recommended before a coordinating conjunction joining two independent clauses."
+      },
+      {
+        "question": "Which sentence correctly uses commas with a coordinating conjunction and multiple items?",
+        "type": "mcq",
+        "options": [
+          "A) She ate apples oranges and bananas.",
+          "B) She ate apples, oranges and bananas.",
+          "C) She ate apples, oranges, and bananas.",
+          "D) She ate apples, oranges and, bananas."
+        ],
+        "correct_answer": "C",
+        "explanation": "Commas should separate each item in a list, with the coordinating conjunction preceding the final item."
+      },
+      {
+        "question": "Which pair is NOT a correlative coordinating conjunction?",
+        "type": "mcq",
+        "options": [
+          "A) Both...and",
+          "B) Either...or",
+          "C) When...then",
+          "D) Neither...nor"
+        ],
+        "correct_answer": "C",
+        "explanation": "When...then is not a correlative coordinating conjunction; 'when' is a subordinating conjunction."
+      },
+      {
+        "question": "Subordinating conjunctions primarily serve to:",
+        "type": "mcq",
+        "options": [
+          "A) Connect independent clauses of equal rank",
+          "B) Connect a dependent clause to an independent clause",
+          "C) Join words or phrases of similar grammatical function",
+          "D) Replace commas in complex sentences"
+        ],
+        "correct_answer": "B",
+        "explanation": "Subordinating conjunctions introduce dependent clauses and show their relationship to the main clause."
+      },
+      {
+        "question": "In the sentence, 'The more you practice, the better you'll become,' what type of conjunction is used?",
+        "type": "mcq",
+        "options": [
+          "A) Coordinating",
+          "B) Subordinating",
+          "C) Correlative coordinating",
+          "D) Adverbial"
+        ],
+        "correct_answer": "C",
+        "explanation": "'The more...the better' is a correlative coordinating conjunction."
+      },
+      {
+        "question": "What is the acronym used to remember the coordinating conjunctions?",
+        "type": "mcq",
+        "options": [
+          "A) SWAB",
+          "B) FANBOYS",
+          "C) COPS",
+          "D) SCUBA"
+        ],
+        "correct_answer": "B",
+        "explanation": "FANBOYS stands for For, And, Nor, But, Or, Yet, So."
+      },
+      {
+        "question": "The sentence 'Mary went to the Writing Center and John went home' illustrates which punctuation rule?",
+        "type": "mcq",
+        "options": [
+          "A) Always use a comma before a coordinating conjunction",
+          "B) Never use a comma before a coordinating conjunction",
+          "C) Use a comma before a coordinating conjunction when joining two independent clauses",
+          "D) Use a comma before a coordinating conjunction only with long clauses."
+        ],
+        "correct_answer": "C",
+        "explanation": "The example shows correct use of a comma before the coordinating conjunction 'and' in joining two independent clauses."
+      }
+    ]
+  }
+}

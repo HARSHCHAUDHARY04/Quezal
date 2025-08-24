@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250816_231649.pdf",
+  "deployment_timestamp": "2025-08-16T23:16:58.103823",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "An integer array 'numbers' is declared with a size of 5.  If numbers[0] has a memory address of 1000, and each integer occupies 4 bytes, what is the memory address of numbers[3]?",
+        "type": "mcq",
+        "options": [
+          "A) 1004",
+          "B) 1008",
+          "C) 1012",
+          "D) 1016"
+        ],
+        "correct_answer": "C",
+        "explanation": "Each integer is 4 bytes.  numbers[3] is 3 elements after numbers[0], so the offset is 3 * 4 = 12 bytes.  1000 + 12 = 1012."
+      },
+      {
+        "question": "Which statement correctly accesses the 5th element of an array named 'data'?",
+        "type": "mcq",
+        "options": [
+          "A) data[5]",
+          "B) data[4]",
+          "C) data(4)",
+          "D) data(5)"
+        ],
+        "correct_answer": "B",
+        "explanation": "Array indexing starts at 0.  The 5th element is at index 4."
+      },
+      {
+        "question": "A program calculates the average of 5 numbers stored in an array.  If the sum of the numbers is 125, what will the calculated average be?",
+        "type": "mcq",
+        "options": [
+          "A) 20",
+          "B) 25",
+          "C) 625",
+          "D) 120"
+        ],
+        "correct_answer": "B",
+        "explanation": "Average = sum / number of elements = 125 / 5 = 25"
+      },
+      {
+        "question": "You have an array of integers.  Which approach is most efficient to find the smallest element?",
+        "type": "mcq",
+        "options": [
+          "A) Sort the array then select the first element.",
+          "B) Iterate through the array, keeping track of the minimum value seen so far.",
+          "C) Use a recursive algorithm to compare each element.",
+          "D) Use a binary search."
+        ],
+        "correct_answer": "B",
+        "explanation": "Iterating once through the array is a linear time O(n) operation, the most efficient for finding the minimum."
+      },
+      {
+        "question": "An array 'numbers' contains {2, 4, 6, 8, 10, 12}.  How many even numbers are present?",
+        "type": "mcq",
+        "options": [
+          "A) 2",
+          "B) 3",
+          "C) 5",
+          "D) 6"
+        ],
+        "correct_answer": "D",
+        "explanation": "All numbers in the array are even."
+      },
+      {
+        "question": "Two arrays, 'a' and 'b', each have 5 integers.  A third array 'c' is created to store the sum of corresponding elements from 'a' and 'b'. What will be the size of array 'c'?",
+        "type": "mcq",
+        "options": [
+          "A) 2",
+          "B) 5",
+          "C) 10",
+          "D) 25"
+        ],
+        "correct_answer": "B",
+        "explanation": "The size of 'c' needs to match the size of 'a' and 'b' to store the element-wise sums."
+      },
+      {
+        "question": "Given an array with elements {15, 22, 8, 31, 19}. What is the value of the element at index 2?",
+        "type": "mcq",
+        "options": [
+          "A) 15",
+          "B) 22",
+          "C) 8",
+          "D) 31"
+        ],
+        "correct_answer": "C",
+        "explanation": "Index 2 refers to the third element in the array, which is 8."
+      },
+      {
+        "question": "Which of the following is NOT a characteristic of arrays in C?",
+        "type": "mcq",
+        "options": [
+          "A) Elements have the same data type.",
+          "B) Elements are stored contiguously in memory.",
+          "C) Size is dynamic and can change during runtime.",
+          "D) Elements are accessed using an index."
+        ],
+        "correct_answer": "C",
+        "explanation": "Array sizes in C are fixed at compile time; they are not dynamic."
+      }
+    ]
+  }
+}

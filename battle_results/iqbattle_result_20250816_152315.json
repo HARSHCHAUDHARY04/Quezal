@@ -1,0 +1,82 @@
+{
+  "battle_document": "battle_document_20250816_152305.pdf",
+  "deployment_timestamp": "2025-08-16T15:23:15.008929",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 1,
+      "fill_blank": 2,
+      "essay": 2,
+      "binary_strike": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "If an integer array 'numbers' has a starting address of 1000 (in decimal) and each integer occupies 4 bytes, what is the address of numbers[3]?",
+        "options": [
+          "1000",
+          "1004",
+          "1012",
+          "1016"
+        ],
+        "answer": "1012",
+        "explanation": "Each integer is 4 bytes.  numbers[3] is the 4th element (index starts at 0).  Therefore, the address is 1000 + (3 * 4) = 1012."
+      },
+      {
+        "type": "true_false",
+        "question": "In a single-dimensional array, all elements must be of the same data type.",
+        "answer": true,
+        "explanation": "This is a fundamental property of arrays; they are homogeneous data structures."
+      },
+      {
+        "type": "fill_blank",
+        "question": "The process of accessing a specific element in an array is called _______________.",
+        "answer": "indexing",
+        "explanation": "Indexing uses the array's name and the index (position) of the desired element within square brackets."
+      },
+      {
+        "type": "essay",
+        "question": "Describe the difference between a single-dimensional and a multi-dimensional array, providing examples of when each would be appropriate.",
+        "answer": "A single-dimensional array is a linear sequence of elements of the same data type, accessed using a single index.  Example: storing a list of student scores. A multi-dimensional array (like a 2D array) organizes elements in rows and columns, accessed using multiple indices. Example: storing a matrix or a table of data (e.g., a game board).  Multi-dimensional arrays are more complex but essential for representing data with multiple dimensions.",
+        "explanation": "The answer should clearly illustrate the structural differences and use cases of each array type."
+      },
+      {
+        "type": "mcq",
+        "question": "Which of the following code snippets correctly calculates the sum of elements in an integer array 'arr' of size 'n'?",
+        "options": [
+          "int sum = 0; for(int i=1; i<=n; ++i) sum += arr[i];",
+          "int sum = 0; for(int i=0; i<n; ++i) sum += arr[i];",
+          "int sum = arr[0]; for(int i=1; i<n; ++i) sum += arr[i];",
+          "int sum = 0; for(int i=0; i<=n; ++i) sum += arr[i];"
+        ],
+        "answer": "int sum = 0; for(int i=0; i<n; ++i) sum += arr[i];",
+        "explanation": "Array indices start at 0, and the loop should iterate up to, but not including, n."
+      },
+      {
+        "type": "binary_strike",
+        "question": "True or False:  The following C code will correctly find the largest element in an integer array 'numbers' of size 10:\n\nint largest = numbers[0];\nfor (int i = 1; i < 10; i++) {\nif (numbers[i] > largest) {\nlargest = numbers[i];\n}}\n",
+        "answer": true,
+        "explanation": "This code correctly iterates through the array and updates 'largest' if a larger element is found."
+      },
+      {
+        "type": "fill_blank",
+        "question": "To find the average of elements in an array, you first calculate the sum of the elements, then divide by the _______.",
+        "answer": "number of elements",
+        "explanation": "Basic statistical calculation of average (mean)."
+      },
+      {
+        "type": "essay",
+        "question": "Write a C code snippet to read 5 integer numbers into an array and then print only the odd numbers from the array.",
+        "answer": "```c\n#include <stdio.h>\nint main() {\nint numbers[5], i;\nfor (i = 0; i < 5; i++) {\nprintf(\"Enter number %d: \", i + 1);\nscanf(\"%d\", &numbers[i]);\n}\nprintf(\"Odd numbers: \");\nfor (i = 0; i < 5; i++) {\nif (numbers[i] % 2 != 0) {\nprintf(\"%d \", numbers[i]);\n}\n}\nreturn 0;\n}\n```",
+        "explanation": "The code should correctly read input, check for odd numbers using the modulo operator, and print only the odd numbers."
+      }
+    ]
+  }
+}

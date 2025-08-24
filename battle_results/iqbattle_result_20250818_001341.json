@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250818_001333.pdf",
+  "deployment_timestamp": "2025-08-18T00:13:41.370574",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which HTML tag is used to define the main content of a webpage?",
+        "type": "mcq",
+        "options": [
+          "A) <head>",
+          "B) <title>",
+          "C) <html>",
+          "D) <body>"
+        ],
+        "correct_answer": "D",
+        "explanation": "The <body> tag contains all the visible content of an HTML page."
+      },
+      {
+        "question": "What does the <title> tag do in an HTML document?",
+        "type": "mcq",
+        "options": [
+          "A) Displays text in bold",
+          "B) Creates a hyperlink",
+          "C) Specifies the document title",
+          "D) Adds an image"
+        ],
+        "correct_answer": "C",
+        "explanation": "The <title> tag defines the title that appears in the browser's title bar or tab."
+      },
+      {
+        "question": "Which HTML tag is used to make text bold?",
+        "type": "mcq",
+        "options": [
+          "A) <i>",
+          "B) <br>",
+          "C) <b>",
+          "D) <p>"
+        ],
+        "correct_answer": "C",
+        "explanation": "The <b> tag is used to display text in bold."
+      },
+      {
+        "question": "What file extension should an HTML file have?",
+        "type": "mcq",
+        "options": [
+          "A) .txt",
+          "B) .doc",
+          "C) .htm or .html",
+          "D) .pdf"
+        ],
+        "correct_answer": "C",
+        "explanation": "HTML files typically use the .htm or .html extension."
+      },
+      {
+        "question": "According to the briefing, what type of editor should NOT be used to create HTML documents?",
+        "type": "mcq",
+        "options": [
+          "A) Notepad",
+          "B) SimpleText",
+          "C) Word Processor",
+          "D) TextEdit (in plain text mode)"
+        ],
+        "correct_answer": "C",
+        "explanation": "Word processors often add formatting that interferes with HTML code."
+      },
+      {
+        "question": "What is the purpose of the <head> section in an HTML document?",
+        "type": "mcq",
+        "options": [
+          "A) Displays the main content",
+          "B) Contains metadata about the document",
+          "C) Defines the body's styling",
+          "D) Creates hyperlinks"
+        ],
+        "correct_answer": "B",
+        "explanation": "The <head> section contains information about the HTML document, such as the title, which is not displayed directly on the page."
+      },
+      {
+        "question": "Which tag pair encloses the main visible content of an HTML document?",
+        "type": "mcq",
+        "options": [
+          "A) <html> </html>",
+          "B) <head> </head>",
+          "C) <title> </title>",
+          "D) <body> </body>"
+        ],
+        "correct_answer": "D",
+        "explanation": "The <body> tags contain the visible content of the HTML document displayed in the browser."
+      },
+      {
+        "question": "To view your created HTML file, what do you need besides the file itself?",
+        "type": "mcq",
+        "options": [
+          "A) A text editor",
+          "B) A word processor",
+          "C) An internet browser",
+          "D) A database"
+        ],
+        "correct_answer": "C",
+        "explanation": "An internet browser is needed to render and display the HTML file."
+      }
+    ]
+  }
+}

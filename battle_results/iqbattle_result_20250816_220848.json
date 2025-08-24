@@ -1,0 +1,83 @@
+{
+  "battle_document": "battle_document_20250816_220839.pdf",
+  "deployment_timestamp": "2025-08-16T22:08:48.393115",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mixed",
+    "question_formation": {
+      "mcq": 2,
+      "true_false": 1,
+      "fill_blank": 2,
+      "essay": 1,
+      "binary_strike": 1,
+      "stealth_mission": 1
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "If an integer array 'numbers' is declared as 'int numbers[5];' and the address of numbers[0] is 1000 (in decimal), assuming each integer takes 4 bytes, what is the address of numbers[3]?",
+        "options": [
+          "1000",
+          "1004",
+          "1012",
+          "1016"
+        ],
+        "answer": "1012",
+        "explanation": "Each integer takes 4 bytes.  numbers[3] is 3 elements away from numbers[0], so its address is 1000 + (3 * 4) = 1012."
+      },
+      {
+        "type": "true_false",
+        "question": "In a single-dimensional array, all elements must have the same data type.",
+        "answer": true,
+        "explanation": "This is a fundamental property of arrays; they store elements of a consistent data type."
+      },
+      {
+        "type": "fill_blank",
+        "question": "In C, array indices start at _______.",
+        "answer": "0",
+        "explanation": "C uses zero-based indexing for arrays."
+      },
+      {
+        "type": "essay",
+        "question": "Explain the difference between a single-dimensional array and a multi-dimensional array, providing examples in C syntax to illustrate your explanation.",
+        "answer": "A single-dimensional array is a linear sequence of elements of the same data type, accessed using a single index.  Example: `int numbers[5];`. A multi-dimensional array represents a table or matrix of elements, accessed using multiple indices.  Example: `int matrix[3][4];`  The first example has one index to access each element, while the second needs two (row and column) to access an individual element.",
+        "explanation": "This question tests understanding of array dimensionality and access methods."
+      },
+      {
+        "type": "mcq",
+        "question": "Which of the following C code snippets correctly calculates the sum of elements in an integer array 'arr' of size 'size'?",
+        "options": [
+          "int sum = 0; for (int i = 1; i <= size; i++) sum += arr[i];",
+          "int sum = 0; for (int i = 0; i < size; i++) sum += arr[i];",
+          "int sum = arr[0]; for (int i = 1; i < size; i++) sum += arr[i];",
+          "int sum = 0; for (int i = 0; i <= size; i++) sum += arr[i];"
+        ],
+        "answer": "int sum = 0; for (int i = 0; i < size; i++) sum += arr[i];",
+        "explanation": "Option 2 correctly iterates through the array from index 0 to size-1, summing each element."
+      },
+      {
+        "type": "binary_strike",
+        "question": "True or False:  The following C code will correctly find the largest element in the array 'numbers':\n`int largest = numbers[0]; for (int i = 1; i < size; i++) { if (numbers[i] > largest) largest = numbers[i]; }`",
+        "answer": true,
+        "explanation": "The code correctly initializes `largest` to the first element and then iterates through the remaining elements, updating `largest` if a larger element is found."
+      },
+      {
+        "type": "stealth_mission",
+        "question": "Write a C function that takes an integer array and its size as input, and returns the index of the smallest element in the array.",
+        "answer": "```c\nint findSmallestIndex(int arr[], int size) {\n  int smallestIndex = 0;\n  for (int i = 1; i < size; i++) {\n    if (arr[i] < arr[smallestIndex]) {\n      smallestIndex = i;\n    }\n  }\n  return smallestIndex;\n}\n```",
+        "explanation": "This requires coding skill to create a function that iterates through the array and determines the index of the smallest element."
+      },
+      {
+        "type": "fill_blank",
+        "question": "To access the 5th element of an array named 'data', you would use the expression ________.",
+        "answer": "data[4]",
+        "explanation": "Remember zero-based indexing."
+      }
+    ]
+  }
+}
