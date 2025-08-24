@@ -400,15 +400,14 @@ def api_me():
 def deploy_battle():
     """Deploy PDF battle document and generate IQBattle"""
     try:
-        # Check if user is authenticated and is a teacher
+        # Check if user is authenticated
         user_id = get_current_user_id()
         user_type = get_current_user_type()
         
         if not user_id:
             return jsonify({'error': 'Authentication required'}), 401
         
-        if user_type != 'teacher':
-            return jsonify({'error': 'Only teachers can create quizzes'}), 403
+        # Both teachers and students can create quizzes now
         
         # Battle intelligence gathering
         print('=== IQBATTLE DEPLOYMENT INITIATED ===')
@@ -636,21 +635,11 @@ def api_my_quizzes():
         conn = get_db_connection()
         cur = conn.cursor()
         
-        if user_type == 'teacher':
-            # Teachers see their own created quizzes
-            cur.execute(
-                'SELECT id, result_filename, original_filename, num_questions, difficulty, mode, created_at FROM quizzes WHERE user_id = ? ORDER BY id DESC',
-                (user_id,)
-            )
-        else:
-            # Students see all available quizzes
-            cur.execute(
-                '''SELECT q.id, q.result_filename, q.original_filename, q.num_questions, q.difficulty, q.mode, q.created_at,
-                          u.name as creator_name
-                   FROM quizzes q
-                   JOIN users u ON q.user_id = u.id
-                   ORDER BY q.created_at DESC'''
-            )
+        # All users see their own created quizzes
+        cur.execute(
+            'SELECT id, result_filename, original_filename, num_questions, difficulty, mode, created_at FROM quizzes WHERE user_id = ? ORDER BY id DESC',
+            (user_id,)
+        )
         
         rows = cur.fetchall()
         conn.close()

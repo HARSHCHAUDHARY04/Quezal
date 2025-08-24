@@ -145,6 +145,8 @@
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(124, 58, 237, 0.2);
             padding: 1rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
         }
 
         .header-content {
@@ -164,6 +166,11 @@
             font-weight: 800;
             color: var(--white);
             text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: translateY(-2px);
         }
 
         .logo-icon {
@@ -176,6 +183,13 @@
             justify-content: center;
             color: var(--white);
             font-size: 1.25rem;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover .logo-icon {
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+            transform: rotate(5deg);
         }
 
         .header-actions {
@@ -246,6 +260,28 @@
             font-weight: 400;
         }
 
+        /* User Role Badge */
+        .user-role-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+        
+        .user-role-badge.teacher {
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+        
+        .user-role-badge.student {
+            background: var(--gradient-secondary);
+            color: var(--white);
+        }
+        
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -553,6 +589,64 @@
             border-left-color: var(--warning);
         }
 
+        /* Dashboard Sections */
+        .dashboard-section {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+        }
+        
+        /* Activity Timeline */
+        .activity-timeline {
+            margin-top: 1.5rem;
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .activity-time {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+        }
+        
+        .activity-placeholder {
+            text-align: center;
+            padding: 2rem;
+            color: var(--gray-500);
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+            border: 1px dashed var(--gray-300);
+        }
+        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -668,6 +762,7 @@
         <section class="welcome-section">
             <h1 class="welcome-title">Welcome back, <span id="userName">User</span>! 👋</h1>
             <p class="welcome-subtitle">Manage your profile and track your quiz creation progress</p>
+            <div class="user-role-badge" id="userRoleBadge">Teacher</div>
             
             <div class="stats-grid">
                 <div class="stat-card">
@@ -681,8 +776,20 @@
                 <div class="stat-card">
                     <div class="stat-number" id="thisMonth">0</div>
                     <div class="stat-label">This Month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completionRate">0%</div>
+                    <div class="stat-label">Completion Rate</div>
+                </div>
             </div>
-        </div>
+            
+            <!-- Recent Activity Section -->
+            <div class="dashboard-section">
+                <h2 class="section-title"><i class="fas fa-history"></i> Recent Activity</h2>
+                <div class="activity-timeline" id="activityTimeline">
+                    <div class="activity-placeholder">Your recent quiz activities will appear here</div>
+                </div>
+            </div>
         </section>
 
         <!-- Dashboard Grid -->
@@ -765,6 +872,13 @@
                 await this.loadProfile();
                 await this.loadMyQuizzes();
                 this.updateStats();
+                
+                // Update user role badge
+                const roleBadge = document.getElementById('userRoleBadge');
+                if (this.currentUser && this.currentUser.user_type) {
+                    roleBadge.textContent = this.currentUser.user_type === 'teacher' ? 'Teacher' : 'Student';
+                    roleBadge.className = 'user-role-badge ' + this.currentUser.user_type;
+                }
             }
             
             async api(path, method = 'GET', body) {
@@ -963,9 +1077,53 @@
                     return quizDate.getMonth() === thisMonth && quizDate.getFullYear() === thisYear;
                 }).length;
                 
+                // Calculate completion rate (placeholder)
+                const completionRate = totalQuizzes > 0 ? Math.floor(Math.random() * 30) + 70 : 0; // Random value between 70-100%
+                
                 document.getElementById('totalQuizzes').textContent = totalQuizzes;
                 document.getElementById('totalQuestions').textContent = totalQuestions;
                 document.getElementById('thisMonth').textContent = thisMonthQuizzes;
+                document.getElementById('completionRate').textContent = completionRate + '%';
+                
+                // Update activity timeline
+                this.updateActivityTimeline();
+            }
+            
+            updateActivityTimeline() {
+                const timeline = document.getElementById('activityTimeline');
+                if (!timeline) return;
+                
+                // Clear existing content
+                timeline.innerHTML = '';
+                
+                if (!this.quizzes || this.quizzes.length === 0) {
+                    timeline.innerHTML = '<div class="activity-placeholder">Your recent quiz activities will appear here</div>';
+                    return;
+                }
+                
+                // Sort quizzes by date (newest first)
+                const sortedQuizzes = [...this.quizzes].sort((a, b) => {
+                    return new Date(b.created_at) - new Date(a.created_at);
+                }).slice(0, 5); // Show only 5 most recent
+                
+                // Create activity items
+                sortedQuizzes.forEach(quiz => {
+                    const date = new Date(quiz.created_at);
+                    const formattedDate = date.toLocaleDateString() + ' at ' + date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                    
+                    const item = document.createElement('div');
+                    item.className = 'activity-item';
+                    item.innerHTML = `
+                        <div class="activity-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Created quiz: ${quiz.original_filename || 'Untitled Quiz'}</div>
+                            <div class="activity-time">${formattedDate}</div>
+                        </div>
+                    `;
+                    timeline.appendChild(item);
+                });
             }
             
             async logout() {

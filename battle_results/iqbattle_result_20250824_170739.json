@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250824_170725.pdf",
+  "deployment_timestamp": "2025-08-24T17:07:39.062645",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "Which of the following correctly declares a variable named 'age' of type integer and initializes it to 30?",
+        "type": "mcq",
+        "options": [
+          "A) int age = \"30\";",
+          "B) int age = 30;",
+          "C) string age = 30;",
+          "D) Integer age = 30;"
+        ],
+        "correct_answer": "B",
+        "explanation": "Option B uses the correct syntax for declaring an integer variable and assigning a value.  'int' specifies the integer data type, and the assignment is done using '='."
+      },
+      {
+        "question": "What is the purpose of the 'public static void main(String[] args)' method in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) To define a class",
+          "B) To create an object",
+          "C) To serve as the entry point of execution",
+          "D) To handle user input"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'main' method is the starting point of execution for any Java program. The Java Virtual Machine (JVM) begins executing code from this method."
+      },
+      {
+        "question": "What is the output of the following code snippet: `System.out.println(\"Hello, \" + \"world!\");`?",
+        "type": "mcq",
+        "options": [
+          "A) Hello, world!",
+          "B) Hello, + world!",
+          "C) Compilation error",
+          "D) Runtime error"
+        ],
+        "correct_answer": "A",
+        "explanation": "The '+' operator concatenates strings in Java. Therefore, the output will be the two strings combined."
+      },
+      {
+        "question": "Which keyword is used to declare a constant variable in Java?",
+        "type": "mcq",
+        "options": [
+          "A) const",
+          "B) static",
+          "C) final",
+          "D) volatile"
+        ],
+        "correct_answer": "C",
+        "explanation": "The 'final' keyword in Java indicates that a variable's value cannot be changed after initialization."
+      },
+      {
+        "question": "Which data type would be most appropriate to store a person's age?",
+        "type": "mcq",
+        "options": [
+          "A) float",
+          "B) double",
+          "C) char",
+          "D) int"
+        ],
+        "correct_answer": "D",
+        "explanation": "Age is a whole number and doesn't require the precision of floating-point numbers. 'int' is the most suitable integer type."
+      },
+      {
+        "question": "What is the purpose of a comment in Java code?",
+        "type": "mcq",
+        "options": [
+          "A) To improve the code's execution speed",
+          "B) To add extra functionality to the program",
+          "C) To explain or document the code for better readability",
+          "D) To hide sections of code during compilation"
+        ],
+        "correct_answer": "C",
+        "explanation": "Comments are used to explain the code's purpose, logic, or functionality for human readers; they are ignored by the compiler."
+      },
+      {
+        "question": "Which command compiles a Java source file named 'MyProgram.java'?",
+        "type": "mcq",
+        "options": [
+          "A) java MyProgram.java",
+          "B) javac MyProgram",
+          "C) compile MyProgram.java",
+          "D) javac MyProgram.java"
+        ],
+        "correct_answer": "D",
+        "explanation": "The `javac` command is the Java compiler and requires the .java extension."
+      },
+      {
+        "question": "What does the `import java.util.*;` statement do in a Java program?",
+        "type": "mcq",
+        "options": [
+          "A) Imports all classes from the 'java.util' package",
+          "B) Creates a new utility package",
+          "C) Declares a utility class",
+          "D) Defines a main method"
+        ],
+        "correct_answer": "A",
+        "explanation": "The `import` statement brings classes from other packages into the current program's scope, making them readily accessible.  The `*` imports all classes within the `java.util` package."
+      }
+    ]
+  }
+}

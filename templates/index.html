@@ -205,6 +205,8 @@
             backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 1rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
         .header-content {
@@ -224,6 +226,11 @@
             font-weight: 800;
             color: var(--white);
             text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover {
+            transform: translateY(-2px);
         }
 
         .logo-icon {
@@ -236,6 +243,13 @@
             justify-content: center;
             color: var(--white);
             font-size: 1.25rem;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover .logo-icon {
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+            transform: rotate(5deg);
         }
 
         .header-actions {
@@ -1535,6 +1549,25 @@
                                 <input id="authName" type="text" class="option-input" placeholder="Your name">
                             </div>
                         </div>
+                        <div id="userTypeField" style="display:none;">
+                            <label class="option-label">I am a</label>
+                            <div style="display:flex; gap:1rem; margin-top:0.5rem;">
+                                <label class="role-option" style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
+                                    <input type="radio" name="userType" value="student" checked style="margin:0;">
+                                    <div style="margin-left:0.75rem;">
+                                        <div style="font-weight:600;">Student</div>
+                                        <div style="font-size:0.8rem; color:var(--gray-500);">Take quizzes & learn</div>
+                                    </div>
+                                </label>
+                                <label class="role-option" style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
+                                    <input type="radio" name="userType" value="teacher" style="margin:0;">
+                                    <div style="margin-left:0.75rem;">
+                                        <div style="font-weight:600;">Teacher</div>
+                                        <div style="font-size:0.8rem; color:var(--gray-500);">Create & manage quizzes</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                         <div>
                             <label class="option-label">Email</label>
                             <div class="input-with-icon">
@@ -1866,9 +1899,6 @@
                                 <button class="show-answer-btn" style="background: var(--gradient-accent); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: var(--radius-lg); cursor: pointer; font-weight: 600;">
                                 <i class="fas fa-eye"></i> Show Answer & Explanation
                             </button>
-                                <button class="debug-answer-btn" style="background: var(--gradient-secondary); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: var(--radius-lg); cursor: pointer; font-weight: 600;">
-                                    <i class="fas fa-bug"></i> Debug Answer
-                                </button>
                             </div>
                         </div>
                     `;
@@ -1965,6 +1995,7 @@
                 this.authMode = mode || 'login';
                 const modal = document.getElementById('authModal');
                 const nameField = document.getElementById('nameField');
+                const userTypeField = document.getElementById('userTypeField');
                 const tabLogin = document.getElementById('tabLogin');
                 const tabSignup = document.getElementById('tabSignup');
                 const authSubmitText = document.getElementById('authSubmitText');
@@ -1981,12 +2012,14 @@
                     tabLogin.classList.remove('active');
                     tabSignup.classList.add('active');
                     nameField.style.display = 'block';
+                    userTypeField.style.display = 'block';
                     authSubmitText.textContent = 'Create Account';
                     toggleAuthText.textContent = 'Switch to Login';
                 } else {
                     tabSignup.classList.remove('active');
                     tabLogin.classList.add('active');
                     nameField.style.display = 'none';
+                    userTypeField.style.display = 'none';
                     authSubmitText.textContent = 'Login';
                     toggleAuthText.textContent = 'Switch to Sign Up';
                 }
@@ -2068,6 +2101,14 @@
                     const payload = { email, password };
                     if (this.authMode === 'signup') {
                         payload.name = name;
+                        // Get selected user type
+                        const userTypeRadios = document.getElementsByName('userType');
+                        for (const radio of userTypeRadios) {
+                            if (radio.checked) {
+                                payload.user_type = radio.value;
+                                break;
+                            }
+                        }
                     }
                     
                     const res = await fetch(this.authMode === 'signup' ? '/api/signup' : '/api/login', {
@@ -2396,8 +2437,36 @@
         
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
-                           console.log('🎓 Quezal initialized!');
+            console.log('🎓 Quezal initialized!');
             console.log('💡 Ready to create amazing quizzes with AI!');
+            
+            // Add event listeners for role selection styling
+            const roleOptions = document.querySelectorAll('.role-option');
+            roleOptions.forEach(option => {
+                const radio = option.querySelector('input[type="radio"]');
+                
+                // Set initial state
+                if (radio.checked) {
+                    option.style.borderColor = 'var(--primary-500)';
+                    option.style.backgroundColor = 'var(--primary-50)';
+                }
+                
+                // Add click event
+                option.addEventListener('click', () => {
+                    // Reset all options
+                    roleOptions.forEach(opt => {
+                        opt.style.borderColor = 'var(--gray-200)';
+                        opt.style.backgroundColor = 'transparent';
+                    });
+                    
+                    // Highlight selected option
+                    option.style.borderColor = 'var(--primary-500)';
+                    option.style.backgroundColor = 'var(--primary-50)';
+                    
+                    // Check the radio button
+                    radio.checked = true;
+                });
+            });
         });
         
         // Keyboard shortcuts
