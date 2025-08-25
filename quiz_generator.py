@@ -35,11 +35,12 @@ def generate_quiz_with_google_ai(pdf_text):
     
     print(f"✅ Google API Key loaded: {api_key[:10]}...")
     
-    # CORRECTED Google AI Studio endpoint with proper model name
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    # Updated Google AI Studio endpoint for Gemini 2.0 Flash
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
     
     headers = {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "X-goog-api-key": api_key
     }
     
     # Create educational prompt

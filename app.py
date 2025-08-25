@@ -146,7 +146,7 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
         return None
     
     # AI Battle Command Center endpoint
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
     
     # Battle mode configurations
     battle_modes = {
@@ -250,7 +250,8 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
     }
     
     headers = {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "X-goog-api-key": api_key
     }
     
     try:
