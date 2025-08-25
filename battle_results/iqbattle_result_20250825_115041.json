@@ -1,0 +1,114 @@
+{
+  "battle_document": "battle_document_20250825_115032.pdf",
+  "deployment_timestamp": "2025-08-25T11:50:41.810243",
+  "battle_parameters": {
+    "num_questions": 8,
+    "difficulty_protocol": "Medium",
+    "battle_mode": "mcq",
+    "question_formation": {
+      "mcq": 8
+    }
+  },
+  "battle_system": "IQBattle_v2.0_AI_Enhanced",
+  "battle_commander": "Google_AI_Gemini_1.5_Flash",
+  "battle_data": {
+    "questions": [
+      {
+        "question": "A digital system primarily processes which type of values?",
+        "type": "mcq",
+        "options": [
+          "A) Analog values",
+          "B) Continuous values",
+          "C) Discrete values",
+          "D) Infinite values"
+        ],
+        "correct_answer": "C",
+        "explanation": "Digital systems are designed to process discrete values, typically represented as binary digits (0 and 1)."
+      },
+      {
+        "question": "Which of the following is an advantage of digital systems over analog systems?",
+        "type": "mcq",
+        "options": [
+          "A) Higher sensitivity to noise",
+          "B) Lower accuracy",
+          "C) Better noise immunity",
+          "D) Lower reliability"
+        ],
+        "correct_answer": "C",
+        "explanation": "Digital systems offer better noise immunity compared to analog systems, making them more robust in noisy environments."
+      },
+      {
+        "question": "What is the decimal equivalent of the binary number 1010?",
+        "type": "mcq",
+        "options": [
+          "A) 5",
+          "B) 8",
+          "C) 10",
+          "D) 12"
+        ],
+        "correct_answer": "C",
+        "explanation": "1010 in binary is (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0) = 8 + 0 + 2 + 0 = 10 in decimal."
+      },
+      {
+        "question": "Convert the decimal number 25 to its binary equivalent.",
+        "type": "mcq",
+        "options": [
+          "A) 11000",
+          "B) 11001",
+          "C) 10101",
+          "D) 11010"
+        ],
+        "correct_answer": "B",
+        "explanation": "25 divided by 2 repeatedly yields remainders 1, 0, 0, 1, 1, reading upwards gives 11001."
+      },
+      {
+        "question": "If you group the binary number 110111 into octal, what is the equivalent octal representation?",
+        "type": "mcq",
+        "options": [
+          "A) 57",
+          "B) 67",
+          "C) 157",
+          "D) 37"
+        ],
+        "correct_answer": "D",
+        "explanation": "Grouping 110111 into groups of 3 from the right gives 110 111, which are 6 and 7 respectively in octal."
+      },
+      {
+        "question": "What base does the hexadecimal number system use?",
+        "type": "mcq",
+        "options": [
+          "A) 2",
+          "B) 8",
+          "C) 10",
+          "D) 16"
+        ],
+        "correct_answer": "D",
+        "explanation": "The hexadecimal number system uses base 16, with digits 0-9 and A-F representing 10-15."
+      },
+      {
+        "question": "Which of the following number systems is most closely associated with lower-level computer programming and memory addressing?",
+        "type": "mcq",
+        "options": [
+          "A) Decimal",
+          "B) Octal",
+          "C) Binary",
+          "D) Hexadecimal"
+        ],
+        "correct_answer": "D",
+        "explanation": "Hexadecimal is commonly used in lower-level programming and memory addressing due to its compact representation of binary data."
+      },
+      {
+        "question": "In the hexadecimal system, what decimal value does the letter 'A' represent?",
+        "type": "mcq",
+        "options": [
+          "A) 9",
+          "B) 10",
+          "C) 11",
+          "D) 12"
+        ],
+        "correct_answer": "B",
+        "explanation": "In hexadecimal, 'A' represents the decimal value 10. B=11, C=12, D=13, E=14, F=15"
+      }
+    ]
+  }
+}
