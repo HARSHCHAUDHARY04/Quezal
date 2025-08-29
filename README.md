@@ -1,82 +1,68 @@
 # 🧠 Quezal - AI-Powered Quiz Generation Platform
 
 <div align="center">
+  <a href="https://quezal-ai.onrender.com" target="_blank"><img src="https://img.shields.io/badge/Live%20Demo-Quezal-brightgreen?style=for-the-badge" alt="Live Demo"></a>
   <img src="https://img.shields.io/badge/Version-2.0-purple?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Flask-2.3.3-green?style=for-the-badge&logo=flask" alt="Flask">
-  <img src="https://img.shields.io/badge/Google%20AI-Gemini%201.5-orange?style=for-the-badge&logo=google" alt="Google AI">
+  <img src="https://img.shields.io/badge/Google%20AI-Gemini%202.0-orange?style=for-the-badge&logo=google" alt="Google AI">
   <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge" alt="License">
 </div>
 
 ## 📖 Overview
 
-**Quezal** is a modern, AI-powered web application that transforms PDF documents into interactive quizzes using Google's Gemini AI. Built with Flask and featuring a beautiful, responsive UI, Quezal empowers educators and learners to create engaging assessments effortlessly.
+**Quezal** transforms PDF documents into interactive quizzes using Google's Gemini AI. Built with Flask and featuring a responsive UI, it empowers educators and learners to create engaging assessments.
 
 ### ✨ Key Features
 
-- 🤖 **AI-Powered Generation**: Uses Google Gemini 1.5 Flash for intelligent quiz creation
-- 👨‍🏫 **Dual User System**: Teacher and Student roles with different capabilities
-- 📱 **Modern UI/UX**: Beautiful, responsive design with glassmorphism effects
-- 👤 **Role-Based Authentication**: Secure signup/login with user type selection
-- 📊 **User Dashboard**: Personal statistics and quiz management
-- 📄 **PDF Processing**: Extracts text from uploaded PDF documents
-- 🎯 **Multiple Question Types**: MCQ, True/False, Fill-in-the-blanks, Essay questions
-- 💾 **Data Persistence**: SQLite database for user data and quiz history
-- 🔒 **Role-Based Access Control**: Teachers create, Students practice
-- 📱 **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- 🤖 **AI-Powered**: Google Gemini 2.0 Flash for quiz creation
+- 👨‍🏫 **Dual Roles**: Teacher (create) and Student (practice) capabilities
+- 📱 **Modern UI**: Responsive design with glassmorphism effects
+- 👤 **Role-Based Auth**: Secure signup/login with user type selection
+- 📊 **Dashboard**: Personal statistics and quiz management
+- 📄 **PDF Processing**: Text extraction from documents
+- 🎯 **Question Types**: MCQ, True/False, Fill-in-blanks, Essay
 
 ## 🏗️ Architecture & Tech Stack
 
 ### **Backend Stack**
 - **Framework**: Flask 2.3.3 (Python web framework)
-- **Database**: SQLite with SQL Alchemy integration
-- **AI Integration**: Google Generative AI (Gemini 1.5 Flash)
+- **Database**: SQLite with direct connection
+- **AI**: Google Generative AI (Gemini 2.0 Flash)
 - **PDF Processing**: PyPDF2 for text extraction
 - **Authentication**: Session-based with password hashing
-- **CORS**: Flask-CORS for cross-origin requests
-- **Environment**: python-dotenv for configuration management
 
 ### **Frontend Stack**
-- **Languages**: HTML5, CSS3, Vanilla JavaScript
-- **Design**: Modern CSS with CSS Variables and Flexbox/Grid
-- **Fonts**: Inter & Plus Jakarta Sans from Google Fonts
-- **Icons**: Font Awesome 6.4.0
-- **Animations**: CSS animations and transitions
-- **Responsive**: Mobile-first responsive design
+- **Languages**: HTML5, CSS3, JavaScript
+- **Design**: Modern CSS with Flexbox/Grid
+- **Fonts**: Inter & Plus Jakarta Sans
+- **Responsive**: Mobile-first design
 
 ### **External APIs**
-- **Google Generative AI**: Gemini 1.5 Flash model for quiz generation
-- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent`
+- **Google AI**: Gemini 2.0 Flash for quiz generation
+- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`
 
 ## 📁 Project Structure
 
 ```
-sumitquiz/
+quiz/
 ├── 📄 app.py                      # Main Flask application
 ├── 📄 quiz_generator.py           # Standalone quiz generator script
 ├── 📄 requirements.txt            # Python dependencies
 ├── 📄 quezal.db                   # SQLite database
 ├── 📄 update_users.py             # Database migration script
 ├── 📄 .env                        # Environment variables (not in repo)
+├── 📄 gamma_ai_prompt_short.md    # AI prompt documentation
 ├── 📁 templates/                  # HTML templates
 │   ├── 📄 index.html             # Main landing page with role-based UI
-│   ├── 📄 user.html              # User dashboard
-│   └── 📄 index_new.html         # Alternative homepage
+│   └── 📄 user.html              # User dashboard
 ├── 📁 battle_uploads/            # Uploaded PDF files storage
 ├── 📁 battle_results/            # Generated quiz JSON files
-├── 📁 uploads/                   # Legacy upload folder
-├── 📁 results/                   # Legacy results folder
-├── 📁 venv/                      # Python virtual environment
-├── 📁 tests/                     # Test files
-│   ├── 📄 test_packages.py
-│   ├── 📄 test_pdf_extraction.py
-│   ├── 📄 test_quiz_debug.py
-│   └── 📄 test_token.py
-└── 📁 documentation/             # Project documentation
-    ├── 📄 FIXES_APPLIED.md
-    ├── 📄 UI_IMPROVEMENTS.md
-    ├── 📄 README.md
-    └── 📄 gamma_ai_prompt_short.md # Gamma.ai presentation prompt
+├── 📁 .venv/                     # Python virtual environment
+├── 📄 test_packages.py           # Test file for package verification
+├── 📄 test_pdf_extraction.py     # Test file for PDF extraction
+├── 📄 test_quiz_debug.py         # Test file for quiz debugging
+└── 📄 test_token.py              # Test file for token verification
 ```
 
 ## 📂 Detailed File & Folder Descriptions
@@ -209,149 +195,54 @@ reportlab==4.2.2          # PDF generation
 - **Purpose**: User data and quiz metadata storage with role-based system
 - **Tables**:
 
-**Users Table**:
-```sql
-CREATE TABLE users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    email TEXT UNIQUE NOT NULL,
-    name TEXT,
-    password_hash TEXT NOT NULL,
-    user_type TEXT DEFAULT 'student',
-    created_at TEXT NOT NULL
-);
-```
-
-**Quizzes Table**:
-```sql
-CREATE TABLE quizzes (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id INTEGER NOT NULL,
-    result_filename TEXT NOT NULL,
-    original_filename TEXT,
-    num_questions INTEGER,
-    difficulty TEXT,
-    mode TEXT,
-    created_at TEXT NOT NULL,
-    FOREIGN KEY(user_id) REFERENCES users(id)
-);
-```
+**Database Schema**:
+- **Users**: ID, email, name, password_hash, user_type, created_at
+- **Quizzes**: ID, user_id, filenames, question details, created_at
 
 ### **Role-Based System**
 
 #### **👨‍🏫 Teacher Role**
-- **Purpose**: Create and manage educational content
-- **Capabilities**:
-  - Upload PDF documents for quiz generation
-  - Create AI-powered quizzes from content
-  - Manage personal quiz library
-  - Download quiz files in various formats
-  - Delete own quizzes
-  - View quiz creation statistics
-- **Interface Features**:
-  - Upload zone with teacher icon
-  - "My Created Quizzes" section
-  - Quiz management tools
-  - Creation statistics dashboard
+- Upload PDFs and create AI quizzes
+- Manage quiz library and view statistics
 
 #### **👨‍🎓 Student Role**
-- **Purpose**: Practice and learn with generated quizzes
-- **Capabilities**:
-  - View all available quizzes
-  - Take quizzes interactively
-  - Practice with different topics
-  - Track learning progress
-  - Download quiz files for offline study
-  - See quiz creator information
-- **Interface Features**:
-  - "Available Quizzes" section
-  - Quiz taking interface
-  - Progress tracking
-  - Practice history
-
-#### **🔐 Role-Based Access Control**
-- **Authentication**: User type selection during signup
-- **Permissions**: Server-side validation of user capabilities
-- **Security**: Role-based API endpoint protection
-- **Session Management**: User type stored securely in session
+- Take quizzes interactively
+- Track progress and download for offline study
 
 ### **Test Files**
-
-#### `test_packages.py`
-- **Purpose**: Verify Python package installations
-- **Tests**: Import tests for all required dependencies
-
-#### `test_pdf_extraction.py`
-- **Purpose**: Test PDF text extraction functionality
-- **Tests**: PyPDF2 functionality and error handling
-
-#### `test_quiz_debug.py`
-- **Purpose**: Debug quiz generation and answer checking
-- **Tests**: Answer validation logic and quiz data structure
-
-#### `test_token.py`
-- **Purpose**: Test Google AI API integration
-- **Tests**: API connectivity and authentication
+- `test_packages.py`: Verify dependencies
+- `test_pdf_extraction.py`: Test PDF extraction
+- `test_quiz_debug.py`: Debug quiz generation
+- `test_token.py`: Test Google AI integration
 
 ## 🚀 Installation & Setup
 
 ### **Prerequisites**
-- Python 3.8 or higher
-- Google AI Studio API key
-- Modern web browser
+- Python 3.8+
+- Google AI API key
+- Web browser
 
-### **1. Clone the Repository**
+### **Quick Setup**
 ```bash
+# Clone and navigate
 git clone <repository-url>
 cd sumitquiz
-```
 
-### **2. Create Virtual Environment**
-```bash
+# Setup environment
 python -m venv venv
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # macOS/Linux
 
-# Windows
-venv\Scripts\activate
-
-# Linux/Mac
-source venv/bin/activate
-```
-
-### **3. Install Dependencies**
-```bash
+# Install and configure
 pip install -r requirements.txt
+# Create .env with GOOGLE_API_KEY=your_key
+
+# Run application
+python app.py  # Development
+gunicorn app:app  # Production
 ```
 
-### **4. Environment Configuration**
-Create a `.env` file in the project root:
-```env
-GOOGLE_API_KEY=your_google_ai_api_key_here
-FLASK_SECRET_KEY=your_secret_key_here
-FLASK_ENV=development
-```
-
-### **5. Initialize Database**
-```bash
-python -c "from app import init_db; init_db()"
-```
-
-### **6. Update Existing Users (Optional)**
-If you have existing users, run the migration script to add user types:
-```bash
-python update_users.py
-```
-
-### **7. Run the Application**
-```bash
-# Development
-python app.py
-
-# Production
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-```
-
-### **8. Access the Application**
-- **Local Development**: http://localhost:5000
-- **Dashboard**: http://localhost:5000/user (requires login)
+Access at: http://localhost:5000
 
 ## 🔧 Configuration
 
@@ -408,80 +299,35 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 4. Profile management capabilities
 5. Role-specific actions (create vs. take quizzes)
 
-## 🎨 UI/UX Features
+## 🎨 UI Features
+- Modern design with purple-cyan theme
+- Responsive layout for all devices
+- Interactive elements with smooth transitions
 
-### **Design System**
-- **Primary Color**: Purple (#7c3aed)
-- **Secondary Color**: Cyan (#06b6d4)
-- **Accent Color**: Amber (#f59e0b)
-- **Typography**: Inter (body), Plus Jakarta Sans (headings)
-
-### **Interactive Elements**
-- **Hover Effects**: Smooth transitions and scaling
-- **Loading States**: Spinners and progress indicators
-- **Animations**: Floating particles and smooth transitions
-- **Responsive**: Mobile-first design with breakpoints
-
-### **User Experience**
-- **Signup Requirement**: Overlay prompts for authentication
-- **File Upload**: Enhanced drag & drop with visual feedback
-- **Real-time Validation**: Instant form validation
-- **Error Handling**: User-friendly error messages
-- **Success Feedback**: Celebratory animations and messages
-
-## 🔍 API Integration Details
-
-### **Google Generative AI (Gemini)**
-- **Model**: gemini-1.5-flash-latest
-- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent`
+## 🔍 API Integration
+- **Model**: Google Gemini 2.0 Flash
+- **Endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`
 - **Authentication**: API key in URL parameter
-- **Request Format**:
-```json
-{
-  "contents": [{
-    "parts": [{
-      "text": "prompt_text"
-    }]
-  }]
-}
-```
+- **Question Types**: MCQ, True/False, Fill-in-blank, Essay
 
-### **Quiz Generation Prompt Structure**
-```javascript
-Battle Mode Configurations:
-- MCQ Assault Mode: Multiple choice with 4 options
-- Binary Strike Mode: True/False questions
-- Stealth Mission Mode: Fill-in-the-blank questions
-- Intelligence Report Mode: Essay questions
-- Mixed Battle Formation: Combination of all types
-```
-
-## 🎯 Use Cases & Applications
+## 🎯 Use Cases
 
 ### **👨‍🏫 For Teachers**
 - **University Professors**: Create course assessments and practice materials
 - **Corporate Trainers**: Generate training quizzes for employee development
 - **Content Creators**: Build interactive educational content
-- **Online Educators**: Create engaging assessments for remote learning
-- **Subject Matter Experts**: Develop specialized quiz content
 
 ### **👨‍🎓 For Students**
 - **University Students**: Practice with course materials and prepare for exams
-- **Corporate Learners**: Complete training assessments and track progress
 - **Self-Learners**: Practice with various topics and subjects
 - **Test Preparers**: Use AI-generated questions for exam preparation
-- **Skill Developers**: Practice specific skills through targeted quizzes
 
 ### **🏢 For Organizations**
 - **Educational Institutions**: Streamline quiz creation and assessment processes
 - **Training Companies**: Deliver scalable training programs
 - **HR Departments**: Create employee assessment and evaluation tools
-- **Content Platforms**: Provide interactive learning experiences
-- **Research Teams**: Generate survey instruments and assessment tools
 
 ## 🧪 Testing
-
-### **Run All Tests**
 ```bash
 python test_packages.py      # Package installation verification
 python test_pdf_extraction.py # PDF processing tests
@@ -489,176 +335,54 @@ python test_quiz_debug.py    # Quiz logic debugging
 python test_token.py         # API connectivity tests
 ```
 
-### **Debug Quiz Generation**
-```bash
-python test_quiz_debug.py
-```
-This script:
-- Tests answer checking logic
-- Analyzes existing quiz files
-- Provides debugging information
-- Validates quiz data structure
-
 ## 🚢 Deployment
-
-### **Development Deployment**
 ```bash
+# Development
 python app.py
-```
 
-### **Production Deployment**
-```bash
-# Using Gunicorn
+# Production with Gunicorn
 gunicorn -w 4 -b 0.0.0.0:5000 app:app
-
-# Using Docker (create Dockerfile)
-docker build -t quezal .
-docker run -p 5000:5000 quezal
 ```
 
-### **Environment Variables for Production**
-```env
-FLASK_ENV=production
-GOOGLE_API_KEY=your_production_api_key
-FLASK_SECRET_KEY=secure_random_key
-PORT=5000
-```
-
-## 🔒 Security Features
-
-### **Authentication**
+## 🔒 Security
 - Password hashing with SHA-256 and salt
-- Session-based authentication
-- Secure session management
-- CSRF protection through session tokens
+- Session-based authentication with CSRF protection
+- File validation (PDF only, 16MB max)
+- SQL injection prevention and XSS protection
 
-### **File Security**
-- File type validation (PDF only)
-- File size limits (16MB maximum)
-- Secure file storage with timestamp naming
-- Input sanitization for file uploads
-
-### **Data Protection**
-- SQL injection prevention
-- XSS protection through proper escaping
-- Secure error handling
-- Environment variable protection
-
-## 📊 Performance Optimizations
-
-### **Frontend**
-- CSS minification and optimization
-- Efficient DOM manipulation
-- Debounced event handlers
-- Optimized animations with hardware acceleration
-
-### **Backend**
-- Efficient database queries
-- File caching strategies
-- Asynchronous operations where possible
-- Memory management for large files
-
-### **AI Integration**
-- Request timeout handling
-- Error recovery mechanisms
-- Efficient prompt optimization
-- Response parsing optimization
+## 📊 Performance
+- Optimized frontend with efficient DOM manipulation
+- Efficient database queries and file caching
+- AI request optimization and error handling
 
 ## 🤝 Contributing
-
-### **Development Setup**
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new features
-5. Submit a pull request
-
-### **Code Style**
+- Fork, create branch, make changes, add tests, submit PR
 - Follow PEP 8 for Python code
-- Use meaningful variable names
-- Add docstrings for functions
-- Comment complex logic
+- Add docstrings and comment complex logic
 
 ## 🐛 Troubleshooting
 
-### **Common Issues**
+**Common Issues**
+- Google AI API: Check key with `python test_token.py`
+- PDF Upload: Verify with `python test_pdf_extraction.py`
+- Database: Reinitialize with `python -c "from app import init_db; init_db()"`
+- Authentication: Clear cache and check session configuration
+- Role-Based System: Check user types with `python update_users.py`
 
-**1. Google AI API Errors**
-```bash
-# Check API key
-echo $GOOGLE_API_KEY
+## 📈 Future Plans
+- Advanced analytics and collaboration tools
+- Question bank and additional export formats
+- LMS integration and enhanced AI capabilities
+- Performance improvements with caching and database optimization
 
-# Test API connectivity
-python test_token.py
-```
-
-**2. PDF Upload Issues**
-```bash
-# Check file permissions
-python test_pdf_extraction.py
-
-# Verify file size and type
-```
-
-**3. Database Issues**
-```bash
-# Reinitialize database
-python -c "from app import init_db; init_db()"
-```
-
-**4. Authentication Problems**
-```bash
-# Clear browser cache and cookies
-# Check session configuration
-```
-
-**5. Role-Based System Issues**
-```bash
-# Check user type in database
-python update_users.py
-
-# Verify role-based permissions
-# Ensure teachers can create, students can take quizzes
-```
-
-## 📈 Future Enhancements
-
-### **Planned Features**
-- **Advanced Analytics**: Detailed quiz performance metrics
-- **Collaboration Tools**: Team quiz creation and sharing
-- **Question Bank**: Reusable question repository
-- **Export Options**: Multiple format exports (Word, PowerPoint)
-- **Integration APIs**: LMS integration capabilities
-- **Advanced AI**: Custom AI model training
-
-### **Technical Improvements**
-- **Caching Layer**: Redis for improved performance
-- **Database Migration**: PostgreSQL for production
-- **Microservices**: Service-oriented architecture
-- **API Documentation**: OpenAPI/Swagger documentation
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📜 License
+MIT License
 
 ## 🙏 Acknowledgments
-
-- **Google AI**: Gemini 1.5 Flash for intelligent quiz generation
-- **Flask Community**: Excellent web framework and documentation
-- **Font Awesome**: Beautiful icons for UI enhancement
-- **Google Fonts**: Typography (Inter & Plus Jakarta Sans)
-
-## 📞 Support
-
-For support, please:
-1. Check the troubleshooting section
-2. Review existing issues
-3. Create a new issue with detailed description
-4. Include error logs and environment details
+Google AI, Flask, Font Awesome, Google Fonts
 
 ---
 
 <div align="center">
-  <p><strong>Built with ❤️ for educators and learners worldwide</strong></p>
-  <p><em>Transforming education through AI-powered quiz generation</em></p>
+  <p><strong>Built with ❤️ for educators and learners</strong></p>
 </div>
