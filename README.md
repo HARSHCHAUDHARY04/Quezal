@@ -226,7 +226,7 @@ reportlab==4.2.2          # PDF generation
 ```bash
 # Clone and navigate
 git clone <repository-url>
-cd sumitquiz
+cd quiz
 
 # Setup environment
 python -m venv venv
