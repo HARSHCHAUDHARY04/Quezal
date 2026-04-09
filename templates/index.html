@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Quezal - AI-Powered Quiz Creation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Quezal - AI-Powered Quiz Creation</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -19,7 +22,7 @@
             --success: #10b981;
             --warning: #f59e0b;
             --error: #ef4444;
-            
+
             /* Neutral Colors */
             --white: #ffffff;
             --gray-50: #f8fafc;
@@ -32,14 +35,14 @@
             --gray-700: #334155;
             --gray-800: #1e293b;
             --gray-900: #0f172a;
-            
+
             /* Gradients */
             --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             --gradient-success: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --gradient-warning: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            
+
             /* Shadows */
             --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
             --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -47,7 +50,7 @@
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
             --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-            
+
             /* Border Radius */
             --radius-sm: 0.5rem;
             --radius: 0.75rem;
@@ -55,7 +58,7 @@
             --radius-lg: 1.5rem;
             --radius-xl: 2rem;
             --radius-2xl: 3rem;
-            
+
             /* Transitions */
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
@@ -74,6 +77,7 @@
             z-index: 2100;
             padding: 1rem;
         }
+
         .auth-card {
             width: 100%;
             max-width: 880px;
@@ -85,6 +89,7 @@
             background: var(--white);
             border: 1px solid var(--gray-200);
         }
+
         .auth-side {
             padding: 2rem;
             background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
@@ -93,13 +98,28 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .auth-side h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 1.75rem; }
-        .auth-side p { opacity: 0.9; }
+
+        .auth-side h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.75rem;
+        }
+
+        .auth-side p {
+            opacity: 0.9;
+        }
+
         .auth-form {
             padding: 2rem;
             background: var(--white);
         }
-        .auth-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+
+        .auth-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
         .auth-tab {
             flex: 1;
             padding: 0.75rem 1rem;
@@ -110,18 +130,70 @@
             cursor: pointer;
             text-align: center;
         }
-        .auth-tab.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
-        .input-with-icon { position: relative; }
-        .input-with-icon i { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--gray-500); }
-        .input-with-icon input { padding-left: 2.25rem; }
-        .auth-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; }
-        .link-btn { background: none; border: none; color: var(--primary-dark); font-weight: 700; cursor: pointer; }
-        .auth-close { background: none; border: none; color: var(--gray-600); cursor: pointer; font-size: 1.25rem; padding: 0.5rem; border-radius: 50%; transition: var(--transition); }
-        .auth-close:hover { background: var(--gray-100); color: var(--gray-800); }
-        @media (max-width: 900px) {
-            .auth-card { grid-template-columns: 1fr; }
-            .auth-side { display: none; }
+
+        .auth-tab.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
         }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray-500);
+        }
+
+        .input-with-icon input {
+            padding-left: 2.25rem;
+        }
+
+        .auth-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .link-btn {
+            background: none;
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .auth-close {
+            background: none;
+            border: none;
+            color: var(--gray-600);
+            cursor: pointer;
+            font-size: 1.25rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .auth-close:hover {
+            background: var(--gray-100);
+            color: var(--gray-800);
+        }
+
+        @media (max-width: 900px) {
+            .auth-card {
+                grid-template-columns: 1fr;
+            }
+
+            .auth-side {
+                display: none;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -145,7 +217,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: 
+            background:
                 radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
@@ -153,9 +225,19 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(1deg); }
-            66% { transform: translateY(20px) rotate(-1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-20px) rotate(1deg);
+            }
+
+            66% {
+                transform: translateY(20px) rotate(-1deg);
+            }
         }
 
         /* Floating Particles */
@@ -178,20 +260,64 @@
             animation: particle-float 15s infinite linear;
         }
 
-        .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
-        .particle:nth-child(2) { left: 20%; animation-delay: 2s; }
-        .particle:nth-child(3) { left: 30%; animation-delay: 4s; }
-        .particle:nth-child(4) { left: 40%; animation-delay: 6s; }
-        .particle:nth-child(5) { left: 50%; animation-delay: 8s; }
-        .particle:nth-child(6) { left: 60%; animation-delay: 10s; }
-        .particle:nth-child(7) { left: 70%; animation-delay: 12s; }
-        .particle:nth-child(8) { left: 80%; animation-delay: 14s; }
+        .particle:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            left: 20%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(3) {
+            left: 30%;
+            animation-delay: 4s;
+        }
+
+        .particle:nth-child(4) {
+            left: 40%;
+            animation-delay: 6s;
+        }
+
+        .particle:nth-child(5) {
+            left: 50%;
+            animation-delay: 8s;
+        }
+
+        .particle:nth-child(6) {
+            left: 60%;
+            animation-delay: 10s;
+        }
+
+        .particle:nth-child(7) {
+            left: 70%;
+            animation-delay: 12s;
+        }
+
+        .particle:nth-child(8) {
+            left: 80%;
+            animation-delay: 14s;
+        }
 
         @keyframes particle-float {
-            0% { transform: translateY(100vh) scale(0); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) scale(1);
+                opacity: 0;
+            }
         }
 
         /* Header */
@@ -228,7 +354,7 @@
             text-decoration: none;
             transition: transform 0.3s ease;
         }
-        
+
         .logo:hover {
             transform: translateY(-2px);
         }
@@ -246,7 +372,7 @@
             box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
             transition: all 0.3s ease;
         }
-        
+
         .logo:hover .logo-icon {
             box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
             transform: rotate(5deg);
@@ -279,7 +405,9 @@
             box-shadow: var(--shadow-lg);
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
 
         /* Main Container */
         .main-container {
@@ -856,7 +984,8 @@
             transform: scale(0.98);
         }
 
-        .answer-section, .explanation-section {
+        .answer-section,
+        .explanation-section {
             background: var(--gray-50);
             padding: 1.5rem;
             border-radius: var(--radius-lg);
@@ -874,7 +1003,8 @@
             background: rgba(6, 182, 212, 0.05);
         }
 
-        .answer-label, .explanation-label {
+        .answer-label,
+        .explanation-label {
             font-weight: 700;
             margin-bottom: 0.75rem;
             display: flex;
@@ -922,8 +1052,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .loading-text {
@@ -969,6 +1104,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -980,6 +1116,7 @@
                 opacity: 0;
                 transform: translateX(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -991,6 +1128,7 @@
                 opacity: 0;
                 transform: translateX(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -1009,28 +1147,30 @@
             .header {
                 padding: 1rem;
             }
-            
+
             .main-container {
                 padding: 100px 1rem 1rem;
             }
-            
+
             .hero-title {
                 font-size: clamp(2.5rem, 10vw, 4rem);
             }
-            
-            .upload-section, .quiz-options, .results-section {
+
+            .upload-section,
+            .quiz-options,
+            .results-section {
                 padding: 2rem 1.5rem;
             }
-            
+
             .question-types {
                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
-            
+
             .quiz-actions {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .action-btn {
                 width: 100%;
                 max-width: 300px;
@@ -1041,7 +1181,7 @@
             .hero-stats {
                 grid-template-columns: 1fr;
             }
-            
+
             .question-header {
                 flex-direction: column;
                 gap: 1rem;
@@ -1237,21 +1377,22 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
+
             .social-media {
                 justify-content: center;
             }
-            
+
             .newsletter-form {
                 flex-direction: column;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="animated-bg"></div>
-    
+
     <!-- Floating Particles -->
     <div class="particles">
         <div class="particle"></div>
@@ -1267,12 +1408,12 @@
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-                               <a href="#" class="logo">
-                       <div class="logo-icon">
-                           <i class="fas fa-brain"></i>
-                       </div>
-                       Quezal
-                   </a>
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                Quezal
+            </a>
             <div class="header-actions">
                 <button class="theme-toggle" id="themeToggle" onclick="app.toggleTheme()">
                     <i class="fas fa-moon"></i>
@@ -1308,8 +1449,9 @@
         <!-- Hero Section -->
         <section class="hero">
             <h1 class="hero-title">AI-Powered Quiz Creation</h1>
-            <p class="hero-subtitle">Transform your PDFs into engaging quizzes with advanced AI technology. Create professional assessments in seconds.</p>
-            
+            <p class="hero-subtitle">Transform your PDFs into engaging quizzes with advanced AI technology. Create
+                professional assessments in seconds.</p>
+
             <div class="hero-stats">
                 <div class="stat-card">
                     <div class="stat-number">10K+</div>
@@ -1366,7 +1508,8 @@
                                 <label class="option-label">New Password</label>
                                 <input id="pwdNew" type="password" class="option-input" required />
                             </div>
-                            <button class="generate-btn" type="submit"><i class="fas fa-lock"></i> Update Password</button>
+                            <button class="generate-btn" type="submit"><i class="fas fa-lock"></i> Update
+                                Password</button>
                         </form>
                     </div>
                 </div>
@@ -1382,7 +1525,7 @@
                     Upload Document
                 </h2>
                 <p class="section-subtitle">Upload your PDF document to generate intelligent quiz questions</p>
-                
+
                 <form id="quizForm" enctype="multipart/form-data">
                     <div class="upload-zone" id="uploadZone" onclick="document.getElementById('pdfFile').click()">
                         <div class="upload-icon">
@@ -1393,8 +1536,9 @@
                         </div>
                         <div class="upload-hint">Maximum file size: 16MB</div>
                     </div>
-                    <input type="file" id="pdfFile" class="file-input" accept=".pdf" onchange="app.handleFileSelection(this.files[0])">
-                    
+                    <input type="file" id="pdfFile" class="file-input" accept=".pdf"
+                        onchange="app.handleFileSelection(this.files[0])">
+
                     <button type="submit" class="generate-btn" id="generateBtn">
                         <i class="fas fa-magic"></i>
                         Generate Quiz
@@ -1409,7 +1553,7 @@
                     Quiz Settings
                 </h2>
                 <p class="section-subtitle">Customize your quiz parameters for optimal results</p>
-                
+
                 <div class="options-grid">
                     <div class="option-group">
                         <label class="option-label" for="numQuestions">Number of Questions</label>
@@ -1423,7 +1567,7 @@
                             <option value="20">20 Questions</option>
                         </select>
                     </div>
-                    
+
                     <div class="option-group">
                         <label class="option-label" for="difficulty">Difficulty Level</label>
                         <select id="difficulty" class="option-select">
@@ -1432,7 +1576,7 @@
                             <option value="Hard">Hard</option>
                         </select>
                     </div>
-                    
+
                     <div class="option-group">
                         <label class="option-label">Question Types</label>
                         <div class="question-types">
@@ -1469,7 +1613,7 @@
                 </h2>
                 <p class="results-subtitle">Review your AI-generated questions and download when ready</p>
             </div>
-            
+
             <div class="quiz-actions" id="quizActionsToolbar" style="display: none;">
                 <button class="action-btn success" id="downloadBtn" onclick="app.downloadQuiz()">
                     <i class="fas fa-download"></i>
@@ -1484,7 +1628,7 @@
                     Print Quiz
                 </button>
             </div>
-            
+
             <div class="questions-container" id="questionsContainer">
                 <!-- Questions will be populated here -->
             </div>
@@ -1535,8 +1679,10 @@
             <div class="auth-form">
                 <div style="display:flex; justify-content:space-between; align-items:center;">
                     <div class="auth-tabs">
-                        <button class="auth-tab active" id="tabLogin" onclick="app.openAuthModal('login'); return false;">Login</button>
-                        <button class="auth-tab" id="tabSignup" onclick="app.openAuthModal('signup'); return false;">Sign Up</button>
+                        <button class="auth-tab active" id="tabLogin"
+                            onclick="app.openAuthModal('login'); return false;">Login</button>
+                        <button class="auth-tab" id="tabSignup"
+                            onclick="app.openAuthModal('signup'); return false;">Sign Up</button>
                     </div>
                     <button class="auth-close" onclick="app.closeAuthModal()"><i class="fas fa-times"></i></button>
                 </div>
@@ -1552,18 +1698,21 @@
                         <div id="userTypeField" style="display:none;">
                             <label class="option-label">I am a</label>
                             <div style="display:flex; gap:1rem; margin-top:0.5rem;">
-                                <label class="role-option" style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
+                                <label class="role-option"
+                                    style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
                                     <input type="radio" name="userType" value="student" checked style="margin:0;">
                                     <div style="margin-left:0.75rem;">
                                         <div style="font-weight:600;">Student</div>
                                         <div style="font-size:0.8rem; color:var(--gray-500);">Take quizzes & learn</div>
                                     </div>
                                 </label>
-                                <label class="role-option" style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
+                                <label class="role-option"
+                                    style="flex:1; cursor:pointer; border:2px solid var(--gray-200); border-radius:var(--radius-lg); padding:0.75rem; display:flex; align-items:center; transition:var(--transition);">
                                     <input type="radio" name="userType" value="teacher" style="margin:0;">
                                     <div style="margin-left:0.75rem;">
                                         <div style="font-weight:600;">Teacher</div>
-                                        <div style="font-size:0.8rem; color:var(--gray-500);">Create & manage quizzes</div>
+                                        <div style="font-size:0.8rem; color:var(--gray-500);">Create & manage quizzes
+                                        </div>
                                     </div>
                                 </label>
                             </div>
@@ -1572,20 +1721,25 @@
                             <label class="option-label">Email</label>
                             <div class="input-with-icon">
                                 <i class="fas fa-envelope"></i>
-                                <input id="authEmail" type="email" class="option-input" placeholder="you@example.com" required>
+                                <input id="authEmail" type="email" class="option-input" placeholder="you@example.com"
+                                    required>
                             </div>
                         </div>
                         <div>
                             <label class="option-label">Password</label>
                             <div class="input-with-icon">
                                 <i class="fas fa-lock"></i>
-                                <input id="authPassword" type="password" class="option-input" placeholder="••••••••" required>
-                                <button type="button" onclick="app.togglePassword('authPassword', this)" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--gray-600);"><i class="fas fa-eye"></i></button>
+                                <input id="authPassword" type="password" class="option-input" placeholder="••••••••"
+                                    required>
+                                <button type="button" onclick="app.togglePassword('authPassword', this)"
+                                    style="position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer; color:var(--gray-600);"><i
+                                        class="fas fa-eye"></i></button>
                             </div>
                         </div>
                         <div id="authErrors" style="display:none; color:var(--error); font-weight:600;"></div>
                         <div class="auth-actions">
-                            <button type="button" class="link-btn" onclick="app.toggleAuthMode()" id="toggleAuthText">Switch to Sign Up</button>
+                            <button type="button" class="link-btn" onclick="app.toggleAuthMode()"
+                                id="toggleAuthText">Switch to Sign Up</button>
                             <button type="submit" class="generate-btn" id="authSubmitBtn">
                                 <i class="fas fa-unlock"></i>
                                 <span id="authSubmitText">Login</span>
@@ -1606,26 +1760,26 @@
                 this.theme = 'light';
                 this.authMode = 'login';
                 this.currentUser = null;
-                
+
                 this.initializeEventListeners();
                 this.initializeTheme();
                 this.checkAuth();
             }
-            
+
             initializeEventListeners() {
                 const uploadZone = document.getElementById('uploadZone');
                 const fileInput = document.getElementById('pdfFile');
-                
+
                 // File upload events
                 uploadZone.addEventListener('dragover', (e) => {
                     e.preventDefault();
                     if (!this.isProcessing) uploadZone.classList.add('dragover');
                 });
-                
+
                 uploadZone.addEventListener('dragleave', () => {
                     uploadZone.classList.remove('dragover');
                 });
-                
+
                 uploadZone.addEventListener('drop', (e) => {
                     e.preventDefault();
                     uploadZone.classList.remove('dragover');
@@ -1633,33 +1787,33 @@
                         this.handleFileSelection(e.dataTransfer.files[0]);
                     }
                 });
-                
+
                 // Form submission
                 document.getElementById('quizForm').addEventListener('submit', (e) => {
                     e.preventDefault();
                     this.generateQuiz();
                 });
             }
-            
+
             initializeTheme() {
                 const savedTheme = localStorage.getItem('quizgen-theme') || 'light';
                 this.setTheme(savedTheme);
             }
-            
+
             toggleTheme() {
                 const newTheme = this.theme === 'light' ? 'dark' : 'light';
                 this.setTheme(newTheme);
             }
-            
+
             setTheme(theme) {
                 this.theme = theme;
                 document.body.setAttribute('data-theme', theme);
                 localStorage.setItem('quizgen-theme', theme);
-                
+
                 const themeBtn = document.getElementById('themeToggle');
                 const icon = themeBtn.querySelector('i');
                 const text = themeBtn.querySelector('span');
-                
+
                 if (theme === 'dark') {
                     document.body.style.background = 'linear-gradient(135deg, #1e293b 0%, #334155 100%)';
                     icon.className = 'fas fa-sun';
@@ -1670,19 +1824,19 @@
                     text.textContent = 'Dark Mode';
                 }
             }
-            
+
             selectMode(mode) {
                 this.selectedMode = mode;
-                
+
                 // Update UI
                 document.querySelectorAll('.type-card').forEach(card => {
                     card.classList.remove('selected');
                 });
                 document.querySelector(`[data-mode="${mode}"]`).classList.add('selected');
-                
+
                 this.showMessage('Format Selected', `${this.getModeDisplayName(mode)} format activated!`, 'success');
             }
-            
+
             getModeDisplayName(mode) {
                 const names = {
                     'mcq': 'Multiple Choice',
@@ -1691,27 +1845,27 @@
                 };
                 return names[mode] || 'Multiple Choice';
             }
-            
+
             handleFileSelection(file) {
                 const uploadZone = document.getElementById('uploadZone');
                 const uploadText = document.getElementById('uploadText');
-                
+
                 if (!file) return;
-                
+
                 uploadZone.classList.remove('file-selected');
-                
+
                 // Validate file
                 if (file.type !== 'application/pdf') {
                     this.showMessage('Invalid File', 'Only PDF documents are accepted!', 'error');
                     return;
                 }
-                
+
                 if (file.size > 16 * 1024 * 1024) {
                     const sizeMB = (file.size / (1024 * 1024)).toFixed(2);
                     this.showMessage('File Too Large', `File is ${sizeMB}MB. Maximum 16MB allowed!`, 'error');
                     return;
                 }
-                
+
                 // File accepted
                 const sizeMB = (file.size / (1024 * 1024)).toFixed(2);
                 uploadText.innerHTML = `
@@ -1719,57 +1873,62 @@
                     ${file.name} <small>(${sizeMB}MB)</small>
                 `;
                 uploadZone.classList.add('file-selected');
-                
+
                 this.showMessage('Document Ready', `"${file.name}" is ready for quiz generation!`, 'success');
             }
-            
+
             async generateQuiz() {
                 if (this.isProcessing) return;
-                
+
                 const fileInput = document.getElementById('pdfFile');
                 const numQuestions = parseInt(document.getElementById('numQuestions').value);
-                
+
                 // Validate
                 if (!fileInput.files || fileInput.files.length === 0) {
                     this.showMessage('No Document', 'Please upload a PDF document first!', 'error');
                     return;
                 }
-                
+
                 if (numQuestions < 4 || numQuestions > 20) {
                     this.showMessage('Invalid Question Count', 'Please select 4-20 questions for optimal quiz length!', 'error');
                     return;
                 }
-                
+
                 this.isProcessing = true;
                 this.showLoading();
-                
+
                 try {
                     const formData = new FormData();
                     formData.append('pdf_file', fileInput.files[0]);
                     formData.append('num_questions', numQuestions);
                     formData.append('difficulty', document.getElementById('difficulty').value);
                     formData.append('question_types', this.selectedMode);
-                    
+
                     console.log('🚀 Generating Quezal Quiz...');
                     console.log('📄 Document:', fileInput.files[0].name);
                     console.log('📝 Format:', this.selectedMode);
                     console.log('📊 Questions:', numQuestions);
-                    
+
                     const response = await fetch('/upload', {
                         method: 'POST',
                         body: formData
                     });
-                    
+
                     if (!response.ok) {
-                        throw new Error(`Generation Failed: ${response.status} ${response.statusText}`);
+                        let errorMsg = `Generation Failed: ${response.status} ${response.statusText}`;
+                        try {
+                            const errorData = await response.json();
+                            if (errorData.error) errorMsg = errorData.error;
+                        } catch (e) { }
+                        throw new Error(errorMsg);
                     }
-                    
+
                     const result = await response.json();
-                    
+
                     if (result.success) {
                         this.displayQuizResults(result.quiz_data, result.question_types);
                         this.currentResultFile = result.result_file;
-                                                   this.showMessage('Quiz Generated!', '🎉 Your Quezal quiz is ready!', 'success');
+                        this.showMessage('Quiz Generated!', '🎉 Your Quezal quiz is ready!', 'success');
                     } else {
                         throw new Error(result.error);
                     }
@@ -1781,18 +1940,18 @@
                     this.hideLoading();
                 }
             }
-            
+
             displayQuizResults(quizData, questionTypes) {
                 const container = document.getElementById('questionsContainer');
                 container.innerHTML = '';
-                
+
                 if (quizData.questions) {
                     quizData.questions.forEach((q, index) => {
                         const questionCard = this.createQuestionCard(q, index + 1);
                         container.appendChild(questionCard);
                     });
                 }
-                
+
                 document.getElementById('resultsSection').style.display = 'block';
                 document.getElementById('quizActionsToolbar').style.display = 'flex';
                 document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
@@ -1853,11 +2012,11 @@
                     this.showMessage('Error', e.message, 'error');
                 }
             }
-            
+
             createQuestionCard(question, number) {
                 const card = document.createElement('div');
                 card.className = 'question-card';
-                
+
                 const typeClass = question.type || 'mcq';
                 const typeName = {
                     'mcq': 'Multiple Choice',
@@ -1865,11 +2024,11 @@
                     'fill_blank': 'Fill in the Blank',
                     'essay': 'Essay Question'
                 }[typeClass];
-                
+
                 let contentHtml = '';
-                
+
                 if (typeClass === 'fill_blank') {
-                    const questionText = question.question.replace(/_{3,}/g, 
+                    const questionText = question.question.replace(/_{3,}/g,
                         '<span style="background: var(--warning); color: white; padding: 0.3rem 1rem; border-radius: 6px; margin: 0 0.3rem;">_____</span>');
                     contentHtml = `
                         <div class="question-text">${questionText}</div>
@@ -1886,10 +2045,10 @@
                         </div>
                     `;
                 } else {
-                    const optionsHtml = (question.options || []).map((option, index) => 
+                    const optionsHtml = (question.options || []).map((option, index) =>
                         `<div class="option-item" data-option="${option}" data-index="${index}">${option}</div>`
                     ).join('');
-                    
+
                     contentHtml = `
                         <div class="question-text">${question.question}</div>
                         <div class="options-list">${optionsHtml}</div>
@@ -1903,7 +2062,7 @@
                         </div>
                     `;
                 }
-                
+
                 card.innerHTML = `
                     <div class="question-header">
                         <div class="question-number">
@@ -1927,20 +2086,20 @@
                         </div>
                     </div>
                 `;
-                
+
                 // Add event listeners for interactive options
                 if (typeClass === 'mcq' || typeClass === 'true_false') {
                     this.addOptionEventListeners(card, question);
                 }
-                
+
                 return card;
             }
-            
+
             showLoading() {
                 document.getElementById('loadingOverlay').style.display = 'flex';
                 document.getElementById('generateBtn').disabled = true;
             }
-            
+
             hideLoading() {
                 document.getElementById('loadingOverlay').style.display = 'none';
                 document.getElementById('generateBtn').disabled = false;
@@ -2000,13 +2159,13 @@
                 const tabSignup = document.getElementById('tabSignup');
                 const authSubmitText = document.getElementById('authSubmitText');
                 const toggleAuthText = document.getElementById('toggleAuthText');
-                
+
                 // Show modal
                 modal.style.display = 'flex';
-                
+
                 // Update UI based on mode
                 const isSignup = this.authMode === 'signup';
-                
+
                 // Update tabs
                 if (isSignup) {
                     tabLogin.classList.remove('active');
@@ -2023,14 +2182,14 @@
                     authSubmitText.textContent = 'Login';
                     toggleAuthText.textContent = 'Switch to Sign Up';
                 }
-                
+
                 // Clear any previous errors
                 const errorBox = document.getElementById('authErrors');
                 if (errorBox) {
                     errorBox.style.display = 'none';
                     errorBox.textContent = '';
                 }
-                
+
                 // Reset form
                 document.getElementById('authForm').reset();
             }
@@ -2048,36 +2207,36 @@
 
             async submitAuth(event) {
                 event.preventDefault();
-                
+
                 const email = document.getElementById('authEmail').value.trim();
                 const password = document.getElementById('authPassword').value.trim();
                 const name = document.getElementById('authName').value.trim();
                 const errorBox = document.getElementById('authErrors');
                 const submitBtn = document.getElementById('authSubmitBtn');
-                
+
                 // Clear previous errors
                 errorBox.style.display = 'none';
                 errorBox.textContent = '';
-                
+
                 // Validation
                 if (!email) {
                     errorBox.textContent = 'Email is required';
                     errorBox.style.display = 'block';
                     return;
                 }
-                
+
                 if (!password) {
                     errorBox.textContent = 'Password is required';
                     errorBox.style.display = 'block';
                     return;
                 }
-                
+
                 if (this.authMode === 'signup' && !name) {
                     errorBox.textContent = 'Name is required for signup';
                     errorBox.style.display = 'block';
                     return;
                 }
-                
+
                 // Email validation
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailRegex.test(email)) {
@@ -2085,18 +2244,18 @@
                     errorBox.style.display = 'block';
                     return;
                 }
-                
+
                 // Password validation for signup
                 if (this.authMode === 'signup' && password.length < 6) {
                     errorBox.textContent = 'Password must be at least 6 characters long';
                     errorBox.style.display = 'block';
                     return;
                 }
-                
+
                 // Disable submit button to prevent double submission
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
-                
+
                 try {
                     const payload = { email, password };
                     if (this.authMode === 'signup') {
@@ -2110,26 +2269,26 @@
                             }
                         }
                     }
-                    
+
                     const res = await fetch(this.authMode === 'signup' ? '/api/signup' : '/api/login', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(payload)
                     });
-                    
+
                     const data = await res.json();
-                    
+
                     if (!res.ok || !data.success) {
                         throw new Error(data.error || 'Authentication failed');
                     }
-                    
+
                     // Success
                     this.currentUser = data.user;
                     this.updateAuthUI(true);
                     this.loadMyQuizzes();
                     this.closeAuthModal();
                     this.showMessage('Welcome', `Hello ${this.currentUser.name || this.currentUser.email}!`, 'success');
-                    
+
                 } catch (e) {
                     console.error('Auth error:', e);
                     errorBox.textContent = e.message || 'Authentication failed. Please try again.';
@@ -2152,7 +2311,7 @@
                         if (nameEl) nameEl.value = p.name || '';
                         if (emailEl) emailEl.value = p.email || '';
                     }
-                } catch (e) {}
+                } catch (e) { }
             }
 
             async saveProfile(event) {
@@ -2212,7 +2371,7 @@
                     icon.className = 'fas fa-eye';
                 }
             }
-            
+
             downloadQuiz() {
                 if (this.currentResultFile) {
                     const url = `/download/${this.currentResultFile}?format=pdf`;
@@ -2222,12 +2381,12 @@
                     this.showMessage('No Quiz Available', '❌ Please generate a quiz first', 'error');
                 }
             }
-            
+
             shareQuiz() {
                 if (navigator.share) {
                     navigator.share({
-                                                   title: 'Quezal Smart Quiz',
-                                                   text: 'Check out this smart quiz I created with Quezal!',
+                        title: 'Quezal Smart Quiz',
+                        text: 'Check out this smart quiz I created with Quezal!',
                         url: window.location.href
                     }).then(() => {
                         this.showMessage('Quiz Shared', '🎉 Quiz link shared successfully!', 'success');
@@ -2238,7 +2397,7 @@
                     this.fallbackShare();
                 }
             }
-            
+
             fallbackShare() {
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -2248,7 +2407,7 @@
                     });
                 }
             }
-            
+
             addOptionEventListeners(card, question) {
                 const options = card.querySelectorAll('.option-item');
                 const answerFeedback = card.querySelector('.answer-feedback');
@@ -2256,21 +2415,21 @@
                 const showAnswerBtn = card.querySelector('.show-answer-btn');
                 const answerSection = card.querySelector('.answer-section');
                 const explanationSection = card.querySelector('.explanation-section');
-                
+
                 options.forEach(option => {
                     option.addEventListener('click', () => {
                         // Remove previous selections
                         options.forEach(opt => {
                             opt.classList.remove('selected', 'correct', 'incorrect');
                         });
-                        
+
                         // Mark selected option
                         option.classList.add('selected');
-                        
+
                         // Check if answer is correct - improved comparison logic
                         const selectedText = option.textContent.trim();
                         const correctAnswer = question.correct_answer.trim();
-                        
+
                         // Debug logging
                         console.log('Answer check:', {
                             selectedText,
@@ -2278,10 +2437,10 @@
                             questionType: question.type,
                             questionText: question.question
                         });
-                        
+
                         // Try multiple comparison methods
                         let isCorrect = false;
-                        
+
                         // Direct comparison
                         if (selectedText === correctAnswer) {
                             isCorrect = true;
@@ -2306,9 +2465,9 @@
                         else if (selectedText.startsWith(correctAnswer + '-') || selectedText.startsWith(correctAnswer + '-')) {
                             isCorrect = true;
                         }
-                        
+
                         console.log('Is correct:', isCorrect);
-                        
+
                         if (isCorrect) {
                             option.classList.add('correct');
                             feedbackText.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success);"></i> Correct! Well done!';
@@ -2318,22 +2477,22 @@
                             feedbackText.innerHTML = '<i class="fas fa-times-circle" style="color: var(--error);"></i> Incorrect. Try again or show the answer.';
                             feedbackText.style.color = 'var(--error)';
                         }
-                        
+
                         // Show feedback
                         answerFeedback.style.display = 'block';
                     });
                 });
-                
+
                 // Show answer button event listener
                 showAnswerBtn.addEventListener('click', () => {
                     // Mark correct answer - improved logic
                     options.forEach(option => {
                         const optionText = option.textContent.trim();
                         const correctAnswer = question.correct_answer.trim();
-                        
+
                         // Try multiple comparison methods
                         let isCorrect = false;
-                        
+
                         if (optionText === correctAnswer) {
                             isCorrect = true;
                         } else if (optionText.includes(correctAnswer) && correctAnswer.length <= 2) {
@@ -2343,24 +2502,24 @@
                         } else if (optionText.startsWith(correctAnswer + ')') || optionText.startsWith(correctAnswer + ')')) {
                             isCorrect = true;
                         }
-                        
+
                         if (isCorrect) {
                             option.classList.add('correct');
                         }
                     });
-                    
+
                     // Show answer and explanation
                     answerSection.style.display = 'block';
                     explanationSection.style.display = 'block';
-                    
+
                     // Hide the show answer button
                     showAnswerBtn.style.display = 'none';
-                    
+
                     // Update feedback text
                     feedbackText.innerHTML = '<i class="fas fa-info-circle" style="color: var(--accent);"></i> Answer and explanation shown below.';
                     feedbackText.style.color = 'var(--accent)';
                 });
-                
+
                 // Debug answer button event listener
                 const debugAnswerBtn = card.querySelector('.debug-answer-btn');
                 if (debugAnswerBtn) {
@@ -2371,47 +2530,47 @@
                             options: Array.from(options).map(opt => opt.textContent.trim()),
                             questionType: question.type
                         };
-                        
+
                         console.log('🔍 Debug Info:', debugInfo);
-                        
+
                         // Show debug info in an alert for easy viewing
                         const debugMessage = `Question: ${question.question}\n\nCorrect Answer: "${question.correct_answer}"\n\nOptions:\n${Array.from(options).map((opt, i) => `${i + 1}. "${opt.textContent.trim()}"`).join('\n')}\n\nQuestion Type: ${question.type}`;
                         alert('Debug Information:\n\n' + debugMessage);
                     });
                 }
             }
-            
+
             subscribeNewsletter(event) {
                 event.preventDefault();
                 const emailInput = event.target.querySelector('.newsletter-input');
                 const email = emailInput.value.trim();
-                
+
                 if (!email) {
                     this.showMessage('Invalid Email', 'Please enter a valid email address', 'error');
                     return;
                 }
-                
+
                 // Simulate newsletter subscription
                 this.showMessage('Newsletter Subscribed!', 'Thank you for subscribing to our newsletter!', 'success');
                 emailInput.value = '';
-                
+
                 // You can add actual newsletter subscription logic here
                 console.log('📧 Newsletter subscription:', email);
             }
-            
+
             showMessage(title, description, type) {
                 // Remove existing messages
                 document.querySelectorAll('.message').forEach(msg => msg.remove());
-                
+
                 const message = document.createElement('div');
                 message.className = `message ${type}`;
-                
+
                 const icons = {
                     success: 'check-circle',
                     error: 'exclamation-triangle',
                     warning: 'exclamation-circle'
                 };
-                
+
                 message.innerHTML = `
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <i class="fas fa-${icons[type]}" style="font-size: 1.5rem; color: var(--${type});"></i>
@@ -2421,9 +2580,9 @@
                         </div>
                     </div>
                 `;
-                
+
                 document.body.appendChild(message);
-                
+
                 setTimeout(() => message.classList.add('show'), 100);
                 setTimeout(() => {
                     message.classList.remove('show');
@@ -2431,26 +2590,26 @@
                 }, 5000);
             }
         }
-        
+
         // Initialize the app
         const app = new QuizGenProApp();
-        
+
         // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
             console.log('🎓 Quezal initialized!');
             console.log('💡 Ready to create amazing quizzes with AI!');
-            
+
             // Add event listeners for role selection styling
             const roleOptions = document.querySelectorAll('.role-option');
             roleOptions.forEach(option => {
                 const radio = option.querySelector('input[type="radio"]');
-                
+
                 // Set initial state
                 if (radio.checked) {
                     option.style.borderColor = 'var(--primary-500)';
                     option.style.backgroundColor = 'var(--primary-50)';
                 }
-                
+
                 // Add click event
                 option.addEventListener('click', () => {
                     // Reset all options
@@ -2458,24 +2617,24 @@
                         opt.style.borderColor = 'var(--gray-200)';
                         opt.style.backgroundColor = 'transparent';
                     });
-                    
+
                     // Highlight selected option
                     option.style.borderColor = 'var(--primary-500)';
                     option.style.backgroundColor = 'var(--primary-50)';
-                    
+
                     // Check the radio button
                     radio.checked = true;
                 });
             });
         });
-        
+
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'u') {
                 e.preventDefault();
                 document.getElementById('pdfFile').click();
             }
-            
+
             if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
                 e.preventDefault();
                 const fileInput = document.getElementById('pdfFile');
@@ -2483,7 +2642,7 @@
                     document.getElementById('generateBtn').click();
                 }
             }
-            
+
             if ((e.ctrlKey || e.metaKey) && e.key === 'd') {
                 e.preventDefault();
                 document.getElementById('themeToggle').click();
@@ -2501,7 +2660,8 @@
                         <i class="fas fa-brain"></i>
                         Quezal
                     </h3>
-                    <p>Transform your learning experience with AI-powered quiz generation. Create engaging assessments from any PDF document in seconds.</p>
+                    <p>Transform your learning experience with AI-powered quiz generation. Create engaging assessments
+                        from any PDF document in seconds.</p>
                     <div class="social-media">
                         <a href="#" class="social-link facebook" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -2569,10 +2729,10 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                                 <p>&copy; 2024 <a href="#">Quezal</a>. All rights reserved. | 
-                   <a href="#">Privacy Policy</a> | 
-                   <a href="#">Terms of Service</a> | 
-                   <a href="#">Cookie Policy</a>
+                <p>&copy; 2024 <a href="#">Quezal</a>. All rights reserved. |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Service</a> |
+                    <a href="#">Cookie Policy</a>
                 </p>
                 <p style="margin-top: 0.5rem;">
                     Made with <i class="fas fa-heart" style="color: #ef4444;"></i> for educators worldwide
@@ -2581,4 +2741,5 @@
         </div>
     </footer>
 </body>
+
 </html>

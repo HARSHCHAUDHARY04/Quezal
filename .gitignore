@@ -1,12 +1,15 @@
-# node_modules/
-# *.log
-# .env
-# venv/
-# __pycache__/
-# *.pyc
-# .DS_Store
-# dist/
-# Thumbs.db
-# build/
-# .vscode/
-# .idea/
+node_modules/
+*.log
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+dist/
+Thumbs.db
+build/
+.vscode/
+.idea/
+quezal.db
+battle_uploads/
+battle_results/

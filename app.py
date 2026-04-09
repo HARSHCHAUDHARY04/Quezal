@@ -145,8 +145,8 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
         print("❌ Insufficient PDF text for question generation")
         return None
     
-    # AI Battle Command Center endpoint
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+    # AI Battle Command Center endpoint - Using Gemini 2.0 Flash Lite for higher quota availability
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent"
     
     # Battle mode configurations
     battle_modes = {
@@ -217,7 +217,7 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
     ========================
     
     Battle Intelligence Source:
-    {pdf_text[:3500]}
+    {pdf_text[:15000]}
     
     MISSION PARAMETERS:
     - Deploy exactly {num_questions} battle questions
@@ -267,15 +267,18 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
             # Extract battle intelligence
             generated_text = extract_generated_text(result)
             if not generated_text:
-                print("❌ AI Battle Commander failed to generate intelligence")
-                return None
+                return {"error": "AI Battle Commander failed to generate intelligence"}
             
             print("✅ Battle intelligence successfully extracted")
             
             # Clean battle response
             generated_text = generated_text.strip()
             if generated_text.startswith("```"):
-                generated_text = generated_text[7:]
+                # Handle cases like ```json or just ```
+                if generated_text.startswith("```json"):
+                    generated_text = generated_text[7:]
+                else:
+                    generated_text = generated_text[3:]
             if generated_text.endswith("```"):
                 generated_text = generated_text[:-3]
             
@@ -287,23 +290,20 @@ def generate_battle_questions(pdf_text, num_questions=8, difficulty="Medium", qu
                 if 'questions' in battle_data:
                     question_types_found = [q.get('type', 'mcq') for q in battle_data['questions']]
                     print(f"✅ Battle questions deployed: {question_types_found}")
-                    
-                    # Count battle formation
-                    formation_count = {}
-                    for qtype in question_types_found:
-                        formation_count[qtype] = formation_count.get(qtype, 0) + 1
-                    print(f"📊 Battle formation: {formation_count}")
                 
                 return battle_data
             except json.JSONDecodeError as e:
                 print(f"❌ Battle data parsing failed: {e}")
                 print(f"🔍 Raw battle response (first 500 chars): {generated_text[:500]}")
-                return None
+                return {"error": "Battle data parsing failed. The AI response was not in a valid format."}
                 
+        elif response.status_code == 429:
+            print(f"❌ AI Battle Command Quota Exceeded")
+            return {"error": "Google AI Quota Exceeded. Please wait 60 seconds and try again."}
         else:
             print(f"❌ AI Battle Command Error: {response.status_code}")
-            print(f"💥 Battle failure details: {response.text}")
-            return None
+            error_details = response.json() if response.status_code != 500 else {"error": "Internal Server Error"}
+            return {"error": f"AI Battle Command Error ({response.status_code}): {response.text[:200]}"}
             
     except Exception as e:
         print(f"❌ Battle system failure: {e}")
@@ -460,8 +460,17 @@ def deploy_battle():
         
         # Generate IQBattle questions
         battle_questions = generate_battle_questions(battle_intelligence, num_questions, difficulty, question_types)
-        if not battle_questions:
-            return jsonify({'error': 'AI Battle Commander failed to generate questions. Please check your PDF content and try again.'}), 500
+        
+        if not battle_questions or (isinstance(battle_questions, dict) and 'error' in battle_questions):
+            error_msg = battle_questions.get('error') if isinstance(battle_questions, dict) else "AI Battle Commander failed to generate questions."
+            print(f"❌ Generation Error: {error_msg}")
+            
+            # Determine appropriate status code
+            status_code = 500
+            if "Quota Exceeded" in error_msg:
+                status_code = 429
+            
+            return jsonify({'error': error_msg}), status_code
         
         # Validate generated questions
         if 'questions' not in battle_questions or not battle_questions['questions']:
@@ -885,11 +894,11 @@ if __name__ == '__main__':
     print("=" * 50)
     
     # Production configuration
-    port = int(os.getenv('PORT', 5000))
+    port = int(os.getenv('PORT', 5001))
     debug_mode = os.getenv('FLASK_ENV') != 'production'
     
     if debug_mode:
-        print("🌐 Local Development: http://localhost:5000")
+        print("🌐 Local Development: http://localhost:5001")
         print("🔧 Debug Mode: ENABLED")
     else:
         print("🌍 Production Deployment: ACTIVE")
