@@ -2341,7 +2341,7 @@
                 try {
                     const current_password = document.getElementById('pwdCurrent').value.trim();
                     const new_password = document.getElementById('pwdNew').value.trim();
-                    const res = await fetch(`${API_BASE_URL}/api/change-password', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ current_password, new_password }), credentials: 'include' });
+                    const res = await fetch(`${API_BASE_URL}/api/change-password`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ current_password, new_password }), credentials: 'include' });
                     const data = await res.json();
                     if (!data.success) throw new Error(data.error || 'Failed to update password');
                     this.showMessage('Updated', 'Password changed successfully.', 'success');
