@@ -1,0 +1,7 @@
+{
+  "name": "quezal-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sed -i \"s|__BACKEND_URL__|$BACKEND_URL|g\" index.html"
+  }
+}
